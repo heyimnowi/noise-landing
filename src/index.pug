@@ -6,7 +6,33 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='/css/vendor.css' rel='stylesheet')
     link(href='/css/application.css' rel='stylesheet')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
   body
-    lalal
+    nav.row.space-between
+      img(src="assets/ic_logo_black.svg", alt="logo")
+      .row
+        a.text-1
+          | ABOUT
+        a.text-1
+          | WORK
+        a.text-1
+          | PORTFOLIO
+        a.text-1
+          | CONTACT
+    section.main-section
+      span.left-fixed-text
+        | ADVENTURE IS EVERYWHERE
+      span.ye-text
+        | ye
+      span.ah-text
+        | ah
+      #scene.main-section-bg
+        .main-section-bg-item(data-depth='0.1')
+          img(src="assets/cover_bg_1.jpg", alt="")
+        .main-section-bg-item(data-depth='0.7')
+          img.mountain-bg(src="assets/cover_layer_2.png", alt="")
+
+
+    
     // inject:js
     // endinject
