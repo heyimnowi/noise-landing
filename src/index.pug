@@ -6,7 +6,6 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='/css/vendor.css' rel='stylesheet')
     link(href='/css/application.css' rel='stylesheet')
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
   body
     nav.row.space-between
       img(src="assets/ic_logo_black.svg", alt="logo")
@@ -23,15 +22,45 @@ html(lang='en')
       span.left-fixed-text
         | ADVENTURE IS EVERYWHERE
       span.ye-text
-        | ye
+        img(src="assets/ye.svg", alt="")
       span.ah-text
-        | ah
+        img(src="assets/ah.svg", alt="")
       #scene.main-section-bg
         .main-section-bg-item(data-depth='0.1')
           img(src="assets/cover_bg_1.jpg", alt="")
         .main-section-bg-item(data-depth='0.7')
           img.mountain-bg(src="assets/cover_layer_2.png", alt="")
-
+      .column.cover-description.start
+        img.m-bottom-3(src="assets/cover_desc.svg")
+        img(src="assets/ic_ok_gotit.svg")
+    section.logo-section.row.center.middle
+      span.left-fixed-text
+        | ANOTHER BEAUTIFUL DAY IN PARADISE, BRO
+      img(src="assets/sec_2_noise.svg", alt="")
+    section.about-section.row.bottom
+      .about-section-img
+        img(src="assets/sec_3_feet.png")
+        img(src="assets/sec_3_wo_really.png", alt="")
+        img(src="assets/sec_3_wave.png", alt="")
+        span.about-section-caption.text-1.base-text.white
+          | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
+      .column.end.about-section-description
+        img.m-bottom-3(src="assets/we_believe.svg", alt="")
+        span.text-4.m-bottom-5.will-like-you
+          | And we will like you!
+        img.m-bottom-3(src="assets/ic_bang.svg", alt="")
+        span.text-4.m-bottom-3.really-great
+          | ps. We are really great at what we do!
+        a.m-bottom-10
+          img(src="assets/ic_what_we_do.svg", alt="")
+    section.contact-section
+      h1
+        | DROP US AN EMAIL
+      h1
+        | amigo
+      form(id="", method="", action="")
+    footer.column.center.middle
+      | Explore the world
 
     
     // inject:js

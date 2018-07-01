@@ -1,8 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@font-face {
+  font-family: 'GothamBold';
+  src: url('../fonts/GothamBold.ttf');
+}
+@font-face {
+  font-family: 'GothamLight';
+  src: url('../fonts/GothamLight.ttf');
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('../fonts/GothamMedium.ttf');
+}
+
+* {
+  font-family: 'GothamMedium';
+}
+
+$ubuntu: 'Ubuntu', sans-serif;
+
+.base-text {
+  &.white {
+    color: $white;
+  }
+
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.black {
+    color: $black;
+  }
+}
+
 .text-1 {
-  color: $black;
   font-size: 11px;
-  height: 10px;
-  letter-spacing: 2.2px;
   line-height: 11px;
-  width: 53px;
+}
+
+.text-2 {
+  font-size: 12px;
+  letter-spacing: 4px;
+  line-height: 34px;
+}
+
+.text-3 {
+  font-size: 20px;
+  line-height: 58px;
+}
+
+.text-4 {
+  color: $darkslategrey;
+  font-size: 23px;
+  letter-spacing: 4px;
+  line-height: 40px;
+}
+
+.text-5 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 17px;
+  text-align: right;
 }
