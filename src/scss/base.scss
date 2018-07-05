@@ -27,6 +27,13 @@ section {
   transform: rotate(-90deg);
 }
 
+.left-fixed-img {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .main-section {
   padding: 0 80px;
   position: relative;
@@ -167,6 +174,26 @@ section {
   }
 }
 
+.max-width-11 {
+  max-width: 65%;
+}
+
+.product-section {
+  position: relative;
+  background-image: url('../assets/ps_2_shapes.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.branding-section {
+  position: relative;
+  background-image: url('../assets/bd_1_img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .contact-section {
   background-image: url('../assets/contact_bg.jpg');
   background-position: center;
@@ -181,4 +208,39 @@ footer {
   font-size: 14px;
   height: 75px;
   width: 100%;
+}
+
+.active-link {
+  padding-right: 30px;
+
+  &.white {
+    border-bottom: 3px solid #fff;
+  }
+
+  &.black {
+    border-bottom: 3px solid black;
+  }
+}
+
+.branding-cool {
+  mix-blend-mode: exclusion;
+  position: ABSOLUTE;
+  left: 60px;
+  top: -130px;
+}
+
+.branding-stuff {
+  //mix-blend-mode: exclusion;
+  position: ABSOLUTE;
+  right: 60px;
+  bottom: -130px;
+}
+
+
+// Opacity
+
+@for $i from 0 through 10 {
+  .opacity-#{$i} {
+    opacity: #{$i * 0.1};
+  }
 }

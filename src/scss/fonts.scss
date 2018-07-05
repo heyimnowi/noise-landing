@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @font-face {
   font-family: 'GothamBold';
-  src: url('../fonts/GothamBold.ttf');
+  src: url('fonts/GothamBold.ttf');
 }
 @font-face {
   font-family: 'GothamLight';
-  src: url('../fonts/GothamLight.ttf');
+  src: url('fonts/GothamLight.ttf');
 }
 @font-face {
   font-family: 'GothamMedium';
-  src: url('../fonts/GothamMedium.ttf');
+  src: url('fonts/GothamMedium.ttf');
 }
 
 * {
@@ -60,4 +60,14 @@ $ubuntu: 'Ubuntu', sans-serif;
   letter-spacing: 4px;
   line-height: 17px;
   text-align: right;
+}
+
+.text-6 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.text-7 {
+  font-size: 24px;
+  line-height: 38px;
 }

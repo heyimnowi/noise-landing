@@ -105,7 +105,7 @@
 }
 
 @for $i from 1 through 3 {
-  .item-#{$i} {
+  .flex-#{$i} {
     flex: $i;
     min-width: 0;
   }
