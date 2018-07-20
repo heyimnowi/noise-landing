@@ -7,18 +7,22 @@ html(lang='en')
     link(href='/css/vendor.css' rel='stylesheet')
     link(href='/css/application.css' rel='stylesheet')
   body
-    nav.row.space-between.middle.center.sm-hidden
-      img(src='assets/ic_logo_black.svg' alt='logo')
-      .row
-        a.text-1.smooth-scroll(href='#about')
-          | ABOUT
-        a.text-1.smooth-scroll(href='#work')
-          | WORK
-        a.text-1.smooth-scroll(href='#portfolio')
-          | PORTFOLIO
-        a.text-1.smooth-scroll(href='#contact')
-          | CONTACT
-    section.main-section
+    nav
+      a.logo-link(href='#home')
+        img(src='assets/ic_logo_black.svg' alt='logo')
+      a.text-1.smooth-scroll(href='#about')
+        | ABOUT
+      a.text-1.smooth-scroll(href='#work')
+        | WORK
+      a.text-1.smooth-scroll(href='#portfolio')
+        | PORTFOLIO
+      a.text-1.smooth-scroll(href='#contact')
+        | CONTACT
+      a.icon.icon-menu
+        .bar
+        .bar
+        .bar
+    section.main-section#home
       img.left-fixed-img.sm-hidden(alt='no image' src='assets/adventure_is.svg')
       img.left-fixed-img.lg-hidden.digital-agency(alt='no image' src='assets/digital_agency.svg')
       span.ye-text
@@ -206,11 +210,12 @@ html(lang='en')
               option(value="audi")
                 | Audi
             textarea.m-bottom-3(placeholder='Message')
-            input.submit-button(type='submit' value='send')
+            button.submit-button(type='submit')
+              | send
     footer.column.center.middle
       .sm-hidden
         | Explore the world    
-      img.m-bottom-2(src="assets/logo_white.svg", alt="")
+      img.m-bottom-2.lg-hidden(src="assets/logo_white.svg", alt="")
       .lg-hidden.m-bottom-4
         | Adventure is everywhere
       .lg-hidden
