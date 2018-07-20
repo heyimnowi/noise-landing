@@ -91,6 +91,7 @@ section {
   padding: 0 80px;
   position: relative;
   text-align: center;
+  overflow-x: hidden;
 
   .we-create-sweet {
     margin: 0 auto;
@@ -202,6 +203,7 @@ section {
 }
 
 .logo-section {
+  overflow-x: hidden;
   position: relative;
 
   .logo {
@@ -223,6 +225,7 @@ section {
   align-items: flex-end;
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 
   .cross-img {
     align-self: center;
@@ -550,6 +553,7 @@ footer {
 // Hi hi-section
 
 .hi-section {
+  overflow-x: hidden;
   align-items: center;
   display: flex;
   flex-direction: column;
