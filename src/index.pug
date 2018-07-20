@@ -7,7 +7,7 @@ html(lang='en')
     link(href='/css/vendor.css' rel='stylesheet')
     link(href='/css/application.css' rel='stylesheet')
   body
-    nav.row.space-between
+    nav.row.space-between.middle.center
       img(src="assets/ic_logo_black.svg", alt="logo")
       .row
         a.text-1
@@ -29,7 +29,7 @@ html(lang='en')
         .main-section-bg-item(data-depth='0.1')
           img(src="assets/cover_bg_1.jpg", alt="")
         .main-section-bg-item(data-depth='0.7')
-          img.mountain-bg(src="assets/cover_layer_2.png", alt="")
+          img.mountain-bg(src="assets/cover_layer_2.png" data-rjs="assets/cover_layer_2@2x.png", alt="")
       .column.cover-description.start
         img.m-bottom-3(src="assets/cover_desc.svg")
         img(src="assets/ic_ok_gotit.svg")
@@ -39,9 +39,9 @@ html(lang='en')
       img(src="assets/sec_2_noise.svg", alt="")
     section.about-section.row.bottom
       .about-section-img
-        img(src="assets/sec_3_feet.png")
-        img(src="assets/sec_3_wo_really.png", alt="")
-        img(src="assets/sec_3_wave.png", alt="")
+        img(src="assets/sec_3_feet.png" data-rjs="assets/sec_3_feet@2x.png")
+        img(src="assets/sec_3_wo_really.png" data-rjs="assets/sec_3_wo_really@2x.png", alt="")
+        img(src="assets/sec_3_wave.png" data-rjs="assets/sec_3_wave@2x.png", alt="")
         p.about-section-caption.text-1.base-text.white
           | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
       .column.end.about-section-description
@@ -70,6 +70,7 @@ html(lang='en')
       span.left-fixed-text
        | TURN YOUR BRAND INTO DIGITAL ART
       img.branding-cool(src="assets/bd_cool.svg", alt="")
+      img.pipes-img(src="assets/ps_2_lines.svg")
       img.branding-stuff(src="assets/bd_stuff.svg", alt="")
       .max-width-11.row.space-between.middle
         .column.flex-2.start.p-right-10
@@ -81,12 +82,69 @@ html(lang='en')
             | Digital experience
         p.flex-3.text-6.base-text.white
           | We encourage you to dream and imagine, before you do. We tell people what you’re all about and craft your visual direction and brand with care and passion and make sure it’s all aligned. We’ll turn your brand into digital art.
-    section.contact-section
-      h1
-        | DROP US AN EMAIL
-      h1
-        | amigo
-      form(id="", method="", action="")
+    
+    section.column.center
+      .max-width-11
+        h3.self-start.text-12.darkslategrey
+          | Cool stuff
+        .row.middle.space-between.portfolio-row
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+        .row.middle.space-between.portfolio-row
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+        .row.middle.space-between.portfolio-row
+          img(src="http://via.placeholder.com/350x350")
+          p
+            | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
+        .row.middle.space-between.portfolio-row
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+        .row.middle.space-between.portfolio-row
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+          img(src="http://via.placeholder.com/350x350")
+    section.hi-section.column.center.middle
+      img.hi-bg(src="assets/mc_rectangle.png")
+      img.hi-friend(src="assets/mc_hi_ma_friend.svg")
+      img.first-co(src="assets/mc_first_company_pictures.svg")
+      .column.staff-pics
+        img(src="assets/img_ida.png")
+        img(src="assets/img_felu.png")
+        img(src="assets/img_santi.png")
+      .max-width-11.center.column.middle
+        .column
+          p.text-3.m-bottom-1
+            | Noise is built by some reckless individualsthat keep seeking new places and experiences on high peaks, majestic ocean and new paths. As a plus, we are really talented and hardworking, and people in general say we are fantastic human beings.
+          p.text-3.m-bottom-1
+            | Start everyday with gratitude, be inspired, and wear happiness - its magnetic, and always, enjoy every single thing.
+          p.text-3
+            | “Che, se puede hablar spanglish in the company?”
+    section.contact-section.column.center.middle
+      .max-width-11.row.center.middle
+        .social-networks-wrapper.flex-1.m-right-8
+          img.rectangle-black(src="assets/footer_rectangle_black.png")
+          .row.social-networks
+            img.m-right-1(src="assets/ic_cross.svg")
+            img.m-right-1(src="assets/LinkedIN_black.svg")
+            img.m-right-1(src="assets/Facebook_black.svg")
+            img.m-right-1(src="assets/Instagram_black.svg")
+          img.logo(src="assets/ic_logo_black.svg", alt="logo")
+        .column.flex-1
+          .row.m-bottom-3
+            h1.text-4.darkslategrey.base-text
+              | DROP US AN EMAIL
+            h1.text-13.darkslategrey.base-text
+              | amigo
+          form.column(id="", method="", action="")
+            input.m-bottom-1(type="text" placeholder="Name")
+            input.m-bottom-1(type="email" placeholder="Email")
+            select.m-bottom-1(type="text" placeholder="Regarding")
+            textarea.m-bottom-2(placeholder="Message")
+            input.submit-button(type="submit" value="send")
     footer.column.center.middle
       | Explore the world
 

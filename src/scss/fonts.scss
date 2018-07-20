@@ -30,6 +30,10 @@ $ubuntu: 'Ubuntu', sans-serif;
   &.black {
     color: $black;
   }
+
+  &.darkslategrey {
+    color: $darkslategrey;
+  }
 }
 
 .text-1 {
@@ -70,4 +74,14 @@ $ubuntu: 'Ubuntu', sans-serif;
 .text-7 {
   font-size: 24px;
   line-height: 38px;
+}
+
+.text-12 {
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.text-13 {
+  font-size: 30px;
+  line-height: 30px;
 }

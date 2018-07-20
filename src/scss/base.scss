@@ -1,6 +1,6 @@
 nav {
   background: white;
-  padding: 44px 48px;
+  padding: 14px 48px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,7 +17,33 @@ body {
 }
 
 section {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 50px);
+}
+
+.pipes-img {
+  position: absolute;
+  mix-blend-mode: exclusion;
+  left: 600px;
+  top: -70px;
+}
+
+.portfolio-row {
+  margin-bottom: 35px;
+  width: 100%;
+
+  img,
+  p {
+    padding: 20px;
+  }
+
+  img {
+    width: 350px;
+    max-width: 33%;
+  }
+
+  p {
+    max-width: 66%;
+  }
 }
 
 .left-fixed-text {
@@ -180,7 +206,7 @@ section {
 
 .product-section {
   position: relative;
-  background-image: url('../assets/ps_2_shapes.png');
+  background-image: url("../assets/ps_2_shapes.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,14 +214,14 @@ section {
 
 .branding-section {
   position: relative;
-  background-image: url('../assets/bd_1_img.png');
+  background-image: url("../assets/bd_1_img.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .contact-section {
-  background-image: url('../assets/contact_bg.jpg');
+  background-image: url("../assets/contact_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,10 +261,92 @@ footer {
   right: 60px;
   bottom: -130px;
 }
+// Hi hi-section
 
+.hi-section {
+  position: relative;
 
+  .hi-bg {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .staff-pics {
+    position: absolute;
+    top: calc(50% - 50px);
+    transform: translateY(-50%);
+    right: 30px;
+  }
+
+  .hi-friend {
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  .first-co {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1,;
+  }
+}
+// footer
+
+.social-networks-wrapper {
+  position: relative;
+  margin-right: 80px;
+
+  .rectangle-black {
+    max-width: 100%;
+  }
+
+  .social-networks {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+form input,
+form select,
+form textarea {
+  background: none;
+  color: #5F5F5F;
+  font-size: 14px;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 5px 10px;
+  resize: none;
+  height: 20px;
+}
+
+form textarea {
+  height: 40px;
+}
+
+.submit-button {
+  height: 55px;
+  background-color: #FFFE60;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  border: 0;
+  color: #000000;
+  font-family: "Gotham Medium";
+  font-size: 24px;
+  letter-spacing: 25.33px;
+  line-height: 24px;
+}
 // Opacity
-
 @for $i from 0 through 10 {
   .opacity-#{$i} {
     opacity: #{$i * 0.1};
