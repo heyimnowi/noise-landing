@@ -45,11 +45,16 @@ $rozha: 'Rozha One', serif;
   &.rozha-font {
     font-family: $rozha;
   }
+
+  &.darkslategrey {
+    color: $darkslategrey;
+  }
 }
 
 .text-right {
   text-align: right;
 }
+
 
 .text-1 {
   font-size: 11px;
@@ -93,18 +98,28 @@ $rozha: 'Rozha One', serif;
 
 .text-8 {
   font-size: 15px;
-  line-height: 16px;
   letter-spacing: 3px;
+  line-height: 16px;
 }
 
 .text-9 {
   font-size: 30px;
-  line-height: 40px;
   letter-spacing: 4px;
+  line-height: 40px;
 }
 
 
 .text-10 {
   font-size: 40px;
   line-height: 70px;
+}
+
+.text-12 {
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.text-13 {
+  font-size: 30px;
+  line-height: 30px;
 }

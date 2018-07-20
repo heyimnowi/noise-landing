@@ -1,6 +1,6 @@
 nav {
   background: white;
-  padding: 44px 48px;
+  padding: 14px 48px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,7 +17,34 @@ body {
 }
 
 section {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 50px);
+}
+
+.pipes-img {
+  left: 600px;
+  position: absolute;
+  top: -70px;
+
+  mix-blend-mode: exclusion;
+}
+
+.portfolio-row {
+  margin-bottom: 35px;
+  width: 100%;
+
+  img,
+  p {
+    padding: 20px;
+  }
+
+  img {
+    max-width: 33%;
+    width: 350px;
+  }
+
+  p {
+    max-width: 66%;
+  }
 }
 
 .left-fixed-text {
@@ -179,27 +206,27 @@ section {
 }
 
 .product-section {
-  position: relative;
   background-image: url('../assets/ps_2_shapes.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .branding-section {
-  position: relative;
   background-image: url('../assets/bd_1_img.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .digital-section {
-  position: relative;
   background-image: url('../assets/digital_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .contact-section {
@@ -210,12 +237,12 @@ section {
 }
 
 .projects-section {
-  padding-top: 160px;
-  padding-bottom: 50px;
   background-image: url('../assets/sec_2_noise.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
+  padding-bottom: 50px;
+  padding-top: 160px;
 
   .project-wrapper {
     .project-desc {
@@ -245,7 +272,7 @@ footer {
   padding-right: 30px;
 
   &.white {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #FFF;
   }
 
   &.black {
@@ -254,22 +281,105 @@ footer {
 }
 
 .branding-cool {
-  mix-blend-mode: exclusion;
-  position: ABSOLUTE;
   left: 60px;
+  position: ABSOLUTE;
   top: -130px;
+
+  mix-blend-mode: exclusion;
 }
 
 .branding-stuff {
+  bottom: -130px;
   //mix-blend-mode: exclusion;
   position: ABSOLUTE;
   right: 60px;
-  bottom: -130px;
+}
+// Hi hi-section
+
+.hi-section {
+  position: relative;
+
+  .hi-bg {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .staff-pics {
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 50px);
+    transform: translateY(-50%);
+  }
+
+  .hi-friend {
+    left: 20px;
+    position: absolute;
+    top: 0;
+  }
+
+  .first-co {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1,;
+  }
+}
+// footer
+
+.social-networks-wrapper {
+  margin-right: 80px;
+  position: relative;
+
+  .rectangle-black {
+    max-width: 100%;
+  }
+
+  .social-networks {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .logo {
+    bottom: 20px;
+    position: absolute;
+    right: 20px;
+  }
 }
 
+form input,
+form select,
+form textarea {
+  background: none;
+  border-bottom: 1px solid #C4C4C4;
+  color: #5F5F5F;
+  font-size: 14px;
+  height: 20px;
+  padding: 5px 10px;
+  resize: none;
+}
 
+form textarea {
+  height: 40px;
+}
+
+.submit-button {
+  background-color: #FFFE60;
+  border: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  color: #000;
+  font-family: 'Gotham Medium';
+  font-size: 24px;
+  height: 55px;
+  letter-spacing: 25.33px;
+  line-height: 24px;
+}
 // Opacity
-
 @for $i from 0 through 10 {
   .opacity-#{$i} {
     opacity: #{$i * 0.1};
