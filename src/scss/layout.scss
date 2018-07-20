@@ -14,6 +14,10 @@
     justify-content: flex-end;
   }
 
+  &.space-between {
+    justify-content: space-between;
+  }
+
   &.start {
     align-items: flex-start;
   }
@@ -108,5 +112,11 @@
   .flex-#{$i} {
     flex: $i;
     min-width: 0;
+  }
+}
+
+@for $i from 1 through 10 {
+  .mw-#{$i} {
+    max-width: #{$i * 100}px;
   }
 }

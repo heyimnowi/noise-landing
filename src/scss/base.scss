@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 }
 
 .left-fixed-text {
@@ -194,11 +194,42 @@ section {
   background-size: cover;
 }
 
+.digital-section {
+  position: relative;
+  background-image: url('../assets/digital_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .contact-section {
   background-image: url('../assets/contact_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.projects-section {
+  padding-top: 160px;
+  padding-bottom: 50px;
+  background-image: url('../assets/sec_2_noise.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+
+  .project-wrapper {
+    .project-desc {
+      min-height: 370px;
+    }
+
+    &:first-child {
+      margin-bottom: 130px;
+    }
+
+    img {
+      max-width: 60%;
+    }
+  }
 }
 
 footer {

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Rozha+One');
+
 @font-face {
   font-family: 'GothamBold';
   src: url('fonts/GothamBold.ttf');
@@ -17,6 +19,7 @@
 }
 
 $ubuntu: 'Ubuntu', sans-serif;
+$rozha: 'Rozha One', serif;
 
 .base-text {
   &.white {
@@ -30,6 +33,22 @@ $ubuntu: 'Ubuntu', sans-serif;
   &.black {
     color: $black;
   }
+
+  &.orange {
+    color: $orange;
+  }
+
+  &.silver {
+    color: $silver;
+  }
+
+  &.rozha-font {
+    font-family: $rozha;
+  }
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-1 {
@@ -70,4 +89,22 @@ $ubuntu: 'Ubuntu', sans-serif;
 .text-7 {
   font-size: 24px;
   line-height: 38px;
+}
+
+.text-8 {
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 3px;
+}
+
+.text-9 {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 4px;
+}
+
+
+.text-10 {
+  font-size: 40px;
+  line-height: 70px;
 }
