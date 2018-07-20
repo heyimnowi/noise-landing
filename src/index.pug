@@ -156,10 +156,11 @@ html(lang='en')
           img(alt='no image' src='https://picsum.photos/350/350?image=90')
           img(alt='no image' src='https://picsum.photos/350/350?image=31')
           img(alt='no image' src='https://picsum.photos/350/350?image=52')
-    section.sm-hidden.hi-section.column.center.middle
+    section.hi-section
       img.hi-bg(alt='no image' src='assets/mc_rectangle.png')
       img.hi-friend(alt='no image' src='assets/mc_hi_ma_friend.svg')
       img.first-co(alt='no image' src='assets/mc_first_company_pictures.svg')
+      img.ef-img(alt='no image' src='assets/bg_ef.svg')
       .column.staff-pics
         img(alt='no image' src='assets/img_ida.png')
         img(alt='no image' src='assets/img_felu.png')
@@ -172,9 +173,9 @@ html(lang='en')
             | Start everyday with gratitude, be inspired, and wear happiness - its magnetic, and always, enjoy every single thing.
           p.text-3
             | “Che, se puede hablar spanglish in the company?”
-    section.sm-hidden.contact-section.column.center.middle#contact
+    section.contact-section.column.center.middle#contact
       .max-width-11.row.center.middle
-        .social-networks-wrapper.flex-1.m-right-8
+        .social-networks-wrapper.flex-1.m-right-8.sm-hidden
           img.rectangle-black(src='assets/footer_rectangle_black.png')
           .row.social-networks
             img.m-right-1(alt='no image' src='assets/ic_cross.svg')
@@ -183,18 +184,38 @@ html(lang='en')
             img.m-right-1(alt='no image' src='assets/Instagram_black.svg')
           img.logo(src='assets/ic_logo_black.svg' alt='logo')
         .column.flex-1
-          .row.m-bottom-3
-            h1.text-4.darkslategrey.base-text
+          .lg-hidden.social-network-responsive
+            img.m-right-1(alt='no image' src='assets/LinkedIN_black.svg')
+            img.m-right-1(alt='no image' src='assets/Facebook_black.svg')
+            img.m-right-1(alt='no image' src='assets/Instagram_black.svg')
+          .m-bottom-3.drop-us-wrapper
+            h1.text-4.darkslategrey.base-text.drop-us
               | DROP US AN EMAIL
-            h1.text-13.darkslategrey.base-text
+            h1.text-13.darkslategrey.base-text.amigo
               | amigo
           form.column(id='' method='' action='')
-            input.m-bottom-1(type='text' placeholder='Name')
-            input.m-bottom-1(type='email' placeholder='Email')
-            select.m-bottom-1(type='text' placeholder='Regarding')
-            textarea.m-bottom-2(placeholder='Message')
+            input.m-bottom-2(type='text' placeholder='Name')
+            input.m-bottom-2(type='email' placeholder='Email')
+            select.m-bottom-2(type='text' placeholder='Regarding')
+              option(value="volvo")
+                | Volvo
+              option(value="saab")
+                | Saab
+              option(value="mercedes")
+                | Mercedes
+              option(value="audi")
+                | Audi
+            textarea.m-bottom-3(placeholder='Message')
             input.submit-button(type='submit' value='send')
-    footer.sm-hidden.column.center.middle
-      | Explore the world    
+    footer.column.center.middle
+      .sm-hidden
+        | Explore the world    
+      img.m-bottom-2(src="assets/logo_white.svg", alt="")
+      .lg-hidden.m-bottom-4
+        | Adventure is everywhere
+      .lg-hidden
+        img.m-right-1(alt='no image' src='assets/LinkedIN_white.svg')
+        img.m-right-1(alt='no image' src='assets/Facebook_white.svg')
+        img.m-right-1(alt='no image' src='assets/Instagram_White.svg')
     // inject:js
     // endinject

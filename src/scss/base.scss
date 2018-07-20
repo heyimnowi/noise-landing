@@ -20,6 +20,18 @@ section {
   min-height: calc(100vh - 50px);
 }
 
+.social-network-responsive {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 45px;
+  }
+}
+
 .pipes-img {
   left: 600px;
   position: absolute;
@@ -153,10 +165,21 @@ section {
       &:last-child {
         bottom: -250px !important;
         top: inherit !important;
+
+        @media (max-width: 768px) {
+          bottom: -10px !important;
+          top: inherit !important;
+          width: auto;
+          height: 270px;
+        }
       }
 
       &:first-child {
         top: -40px !important;
+
+        @media (max-width: 768px) {
+          top: -20px !important;
+        }
       }
     }
 
@@ -313,6 +336,11 @@ section {
 
 .max-width-11 {
   max-width: 65%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 10px 30px;
+  }
 }
 
 .product-section,
@@ -391,6 +419,13 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -25px;
+
+  @media (max-width: 768px) {
+    .max-width-11 {
+      width: 100%;
+    }
+  }
 }
 
 .projects-section {
@@ -478,8 +513,12 @@ footer {
   color: $darkgray;
   font-family: $ubuntu;
   font-size: 14px;
-  height: 75px;
+  min-height: 75px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 50px 10px;
+  }
 }
 
 .active-link {
@@ -511,7 +550,16 @@ footer {
 // Hi hi-section
 
 .hi-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    min-height: inherit;
+  }
 
   .hi-bg {
     height: 100%;
@@ -520,6 +568,12 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+
+    @media (max-width: 768px) {
+      left: -10px;
+      right: inherit;
+      width: 150%;
+    }
   }
 
   .staff-pics {
@@ -527,12 +581,43 @@ footer {
     right: 30px;
     top: calc(50% - 50px);
     transform: translateY(-50%);
+
+    @media (max-width: 768px) {
+      top: 50%;
+
+      img {
+        height: auto;
+        width: 80px;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .max-width-11 {
+    @media (max-width: 768px) {
+      max-width: 270px;
+      padding: 150px 0;
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-top: 170px;
+      width: 80%;
+      z-index: 1;
+    }
   }
 
   .hi-friend {
     left: 20px;
     position: absolute;
     top: 0;
+
+    @media (max-width: 768px) {
+      left: 50px;
+      top: 40px;
+      width: 150px;
+    }
   }
 
   .first-co {
@@ -540,7 +625,30 @@ footer {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1,;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      bottom: 30px;
+      right: 20px;
+      top: inherit;
+      transform: none;
+      width: 220px;
+    }
+  }
+
+  .ef-img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    @media (max-width: 768px) {
+      bottom: 0;
+      right: 20px;
+      transform: none;
+      width: 120px;
+    }
   }
 }
 // footer
@@ -560,7 +668,7 @@ footer {
   }
 
   .logo {
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
     right: 20px;
   }
@@ -573,13 +681,30 @@ form textarea {
   border-bottom: 1px solid #C4C4C4;
   color: #5F5F5F;
   font-size: 14px;
-  height: 20px;
-  padding: 5px 10px;
+  height: 30px;
+  padding: 0 10px;
   resize: none;
 }
 
 form textarea {
   height: 40px;
+}
+
+.drop-us-wrapper {
+  display: flex;
+  flex-direction: column;
+
+
+  .drop-us {
+    font-size: 23px;
+    line-height: 23px;
+    width: 100%;
+  }
+
+  .amigo {
+    align-self: flex-end;
+  }
+
 }
 
 .submit-button {

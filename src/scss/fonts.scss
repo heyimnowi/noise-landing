@@ -70,6 +70,11 @@ $rozha: 'Rozha One', serif;
 .text-3 {
   font-size: 20px;
   line-height: 58px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+    line-height: 23px;
+  }
 }
 
 .text-4 {
