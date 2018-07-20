@@ -42,7 +42,7 @@ $rozha: 'Rozha One', serif;
     color: $silver;
   }
 
-  &.rozha-font {
+  &.rozha {
     font-family: $rozha;
   }
 
@@ -77,6 +77,11 @@ $rozha: 'Rozha One', serif;
   font-size: 23px;
   letter-spacing: 4px;
   line-height: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .text-5 {
@@ -89,6 +94,11 @@ $rozha: 'Rozha One', serif;
 .text-6 {
   font-size: 16px;
   line-height: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 .text-7 {
@@ -100,18 +110,33 @@ $rozha: 'Rozha One', serif;
   font-size: 15px;
   letter-spacing: 3px;
   line-height: 16px;
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+    line-height: 16px;
+  }
 }
 
 .text-9 {
   font-size: 30px;
   letter-spacing: 4px;
   line-height: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 
 .text-10 {
   font-size: 40px;
   line-height: 70px;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .text-12 {

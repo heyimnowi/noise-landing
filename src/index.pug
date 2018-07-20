@@ -7,155 +7,163 @@ html(lang='en')
     link(href='/css/vendor.css' rel='stylesheet')
     link(href='/css/application.css' rel='stylesheet')
   body
-    nav.row.space-between.middle.center
-      img(src="assets/ic_logo_black.svg", alt="logo")
+    nav.row.space-between.middle.center.sm-hidden
+      img(src='assets/ic_logo_black.svg' alt='logo')
       .row
-        a.text-1.smooth-scroll(href="#about")
+        a.text-1.smooth-scroll(href='#about')
           | ABOUT
-        a.text-1.smooth-scroll(href="#work")
+        a.text-1.smooth-scroll(href='#work')
           | WORK
-        a.text-1.smooth-scroll(href="#portfolio")
+        a.text-1.smooth-scroll(href='#portfolio')
           | PORTFOLIO
-        a.text-1.smooth-scroll(href="#contact")
+        a.text-1.smooth-scroll(href='#contact')
           | CONTACT
     section.main-section
-      span.left-fixed-text
-        | ADVENTURE IS EVERYWHERE
+      img.left-fixed-img.sm-hidden(alt='no image' src='assets/adventure_is.svg')
+      img.left-fixed-img.lg-hidden.digital-agency(alt='no image' src='assets/digital_agency.svg')
       span.ye-text
-        img(src="assets/ye.svg", alt="")
+        img(src='assets/ye.svg' alt='no image')
       span.ah-text
-        img(src="assets/ah.svg", alt="")
+        img(src='assets/ah.svg' alt='no image')
       #scene.main-section-bg
         .main-section-bg-item(data-depth='0.1')
-          img(src="assets/cover_bg_1.jpg", alt="")
+          img(src='assets/cover_bg_1.jpg' alt='no image')
         .main-section-bg-item(data-depth='0.7')
-          img.mountain-bg(src="assets/cover_layer_2.png")
+          img.mountain-bg(alt='no image' src='assets/cover_layer_2.png')
       .column.cover-description.start
-        img.m-bottom-3(src="assets/cover_desc.svg")
-        img(src="assets/ic_ok_gotit.svg")
+        img.m-bottom-3(alt='no image' src='assets/cover_desc.svg')
+        img(alt='no image' src='assets/ic_ok_gotit.svg')
+      img.m-bottom-3.we-create-sweet.lg-hidden(src='assets/we_create_sweet.svg')
     section.logo-section.row.center.middle#work
-      span.left-fixed-text
-        | ANOTHER BEAUTIFUL DAY IN PARADISE, BRO
-      img(src="assets/sec_2_noise.svg", alt="")
-    section#about.about-section.row.bottom
-      .about-section-img
-        img(src="assets/sec_3_feet.png" data-rjs="assets/sec_3_feet@2x.png")
-        img(src="assets/sec_3_wo_really.png" data-rjs="assets/sec_3_wo_really@2x.png", alt="")
-        img(src="assets/sec_3_wave.png" data-rjs="assets/sec_3_wave@2x.png", alt="")
+      img.left-fixed-img.sm-hidden(alt='no image' src='assets/another_beautiful.svg')
+      img.logo(src='assets/sec_2_noise.svg' alt='no image')
+    section#about.about-section
+      .about-section-img.sm-hidden
+        img(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
+        img(src='assets/sec_3_wo_really.png' data-rjs='assets/sec_3_wo_really@2x.png' alt='no image')
+        img(src='assets/sec_3_wave.png' data-rjs='assets/sec_3_wave@2x.png' alt='no image')
         p.about-section-caption.text-1.base-text.white
           | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
       .column.end.about-section-description
-        img.m-bottom-3(src="assets/we_believe.svg", alt="")
-        span.text-4.m-bottom-5.will-like-you
-          | And we will like you!
-        img.m-bottom-3(src="assets/ic_bang.svg", alt="")
-        span.text-4.m-bottom-3.really-great
+        p.m-bottom-3.base-text.rozha.we-believe
+          | We believe people like to work with people they like
+        .row.we-will-like-you-row
+          span.text-4.m-bottom-5.will-like-you
+            | And we will like you!
+          .lg-hidden
+            img.feet-img(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
+            img.bang-img(src='assets/ic_bang.svg' alt='no image')
+        img.m-bottom-3.sm-hidden(src='assets/ic_bang.svg' alt='no image')
+        span.text-4.m-bottom-3.really-great.sm-hidden
           | ps. We are really great at what we do!
-        a.m-bottom-10
-          img(src="assets/ic_what_we_do.svg", alt="")
-    section.product-section.column.center.middle
-      .max-width-11.row.space-between.middle
-        .left-fixed-img
-          img(src="assets/exploration.svg", alt="")
-        .column.flex-2.start.p-right-10
-          h2.text-7.active-link.m-bottom-3.black.base-text
+        img.lg-hidden.what-we-do-mobile(src='assets/what_we_do_mobile.svg' alt='no image')
+        a.m-bottom-10.sm-hidden
+          img(src='assets/ic_what_we_do.svg' alt='no image')
+        img.lg-hidden.cross-img(src='assets/cross.svg' alt='no image')
+    section#product.product-section.column.center.middle
+      .max-width-11
+        img.left-fixed-img(src='assets/exploration.svg' alt='no image')
+        .column.flex-2.start.p-right-10.links-wrapper
+          a.text-7.active-link.m-bottom-3.black.base-text(href='#product')
             | Product Strategy
-          h2.text-7.opacity-4.m-bottom-3.black.base-text
+          a.text-7.opacity-4.m-bottom-3.black.base-text.sm-hidden(href='#branding')
             | Branding Development
-          h2.text-7.opacity-4.black.base-text
+          a.text-7.opacity-4.black.base-text.sm-hidden(href='#digital')
             | Digital experience
-        p.flex-3.text-6
+        p.flex-3.text-6.sec-description
           | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
-    section.branding-section.column.center.middle
-      span.left-fixed-text
-       | TURN YOUR BRAND INTO DIGITAL ART
-      img.branding-cool(src="assets/bd_cool.svg", alt="")
-      img.pipes-img(src="assets/ps_2_lines.svg")
-      img.branding-stuff(src="assets/bd_stuff.svg", alt="")
-      .max-width-11.row.space-between.middle
-        .column.flex-2.start.p-right-10
-          h2.text-7.m-bottom-3.base-text.white.opacity-4
+    section#branding.branding-section.column.center.middle
+      img.left-fixed-img(src='assets/turn_your_brand.svg' alt='no image')
+      img.branding-cool.sm-hidden(src='assets/bd_cool.svg' alt='no image')
+      img.pipes-img(alt='no image' src='assets/ps_2_lines.svg')
+      img.branding-stuff.sm-hidden(src='assets/bd_stuff.svg' alt='no image')
+      .max-width-11
+        .column.flex-2.start.p-right-10.links-wrapper
+          a.text-7.m-bottom-3.base-text.white.opacity-4.sm-hidden(href='#product')
             | Product Strategy
-          h2.text-7.m-bottom-3.active-link.base-text.white
+          a.text-7.m-bottom-3.active-link.base-text.white(href='#branding')
             | Branding Development
-          h2.text-7.opacity-4.base-text.white
+          a.text-7.opacity-4.base-text.white.sm-hidden(href='#digital')
             | Digital experience
-        p.flex-3.text-6.base-text.white
+        p.flex-3.text-6.base-text.white.sec-description
           | We encourage you to dream and imagine, before you do. We tell people what you’re all about and craft your visual direction and brand with care and passion and make sure it’s all aligned. We’ll turn your brand into digital art.
     section.digital-section.column.center.middle
-      span.left-fixed-text.orange.base-text
-       | TURN YOUR BRAND INTO DIGITAL ART
-      .max-width-11.row.space-between.middle
-        .column.flex-2.start.p-right-10
-          h2.text-7.m-bottom-3.base-text.opacity-4.white
+      img.left-fixed-img(src='assets/digital_left_anchor.svg' alt='no image')
+      .max-width-11
+        .column.flex-2.start.p-right-10.links-wrapper
+          a.text-7.m-bottom-3.base-text.opacity-4.white.sm-hidden(href='#product')
             | Product Strategy
-          h2.text-7.m-bottom-3.base-text.opacity-4.white
+          a.text-7.m-bottom-3.base-text.opacity-4.white.sm-hidden(href='#branding')
             | Branding Development
-          h2.text-7.base-text.active-link.white
+          a.text-7.base-text.active-link.white(href='#digital')
             | Digital experience
         .flex-3.column
-          p.text-6.base-text.white.m-bottom-2
+          p.text-6.base-text.white.m-bottom-2.sec-description
             | We have a clear mission, to make what you care about exciting for other people and to craft the greatest experiences and design. Apps, websites, platforms…we treat work as play and view ourselves as ultimate users of the products we make.
-          p.text-6.base-text.white
+          p.text-6.base-text.white.sec-description
             | Ps. we love mind-blowing, stunning content and have close relations with talented photographers, video producers and writers.
     section.projects-section.column.center.middle
       .max-width-11
-        .row.bottom.project-wrapper
-          img.m-right-1(src="https://picsum.photos/750/750?image=75", alt="")
+        .project-wrapper
+          span.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
+            | Go Amper
+          img(src='https://picsum.photos/750/750?image=75' alt='no image')
           .column.project-desc.space-between
             .column
-              span.base-text.rozha-font.text-10.m-bottom-2
+              span.base-text.rozha-font.text-10.m-bottom-2.rozha.sm-hidden
                 | Go Amper
               span.text-9.m-bottom-3.mw-2
                 | Electric skateboard
               span.text-8
                 | We choose happiness. We believe that what we do everyday should make us happy.
-            a.text-8.base-text.silver.bold(href="www.goamper.com.cl", target="_blank")
+            a.text-8.base-text.silver.bold.project-link(href='www.goamper.com.cl' target='_blank')
               | WWW.GOAMPER.COM.CL
-        .row.bottom.project-wrapper
-          .column.m-right-1.text-right.project-desc.space-between
+        .project-wrapper
+          .column.text-right.project-desc.space-between
             .column.end
-              span.base-text.rozha-font.text-10.m-bottom-2
+              span.base-text.rozha-font.text-10.m-bottom-2.rozha.sm-hidden
                 | Syrmo
               span.text-9.m-bottom-3.mw-2
                 | Skateboard traker
               span.text-8
                 | We choose happiness. We believe that what we do everyday should make us happy.
-            a.text-8.base-text.silver.bold(href="www.syrmo.com", target="_blank")
+            a.text-8.base-text.silver.bold.project-link(href='www.syrmo.com' target='_blank')
               | WWW.SYRMO.COM
-          img(src="https://picsum.photos/750/750?image=89", alt="")
+          img(src='https://picsum.photos/750/750?image=89' alt='no image')
+          span.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
+            | Syrmo
     section.column.center#portfolio
       .max-width-11
-        h3.self-start.text-12.darkslategrey
+        h3.self-start.text-12.darkslategrey.rozha.base-text
           | Cool stuff
         .row.middle.space-between.portfolio-row
-          img(src="https://picsum.photos/350/350?image=10")
-          img(src="https://picsum.photos/350/350?image=21")
-          img(src="https://picsum.photos/350/350?image=32")
+          img(alt='no image' src='https://picsum.photos/350/350?image=10')
+          img(alt='no image' src='https://picsum.photos/350/350?image=21')
+          img(alt='no image' src='https://picsum.photos/350/350?image=32')
         .row.middle.space-between.portfolio-row
-          img(src="https://picsum.photos/350/350?image=43")
-          img(src="https://picsum.photos/350/350?image=54")
-          img(src="https://picsum.photos/350/350?image=65")
+          img(alt='no image' src='https://picsum.photos/350/350?image=43')
+          img(alt='no image' src='https://picsum.photos/350/350?image=54')
+          img(alt='no image' src='https://picsum.photos/350/350?image=65')
         .row.middle.space-between.portfolio-row
-          img(src="https://picsum.photos/350/350?image=76")
+          img(alt='no image' src='https://picsum.photos/350/350?image=76')
           p
             | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
         .row.middle.space-between.portfolio-row
-          img(src="https://picsum.photos/350/350?image=87")
-          img(src="https://picsum.photos/350/350?image=98")
-          img(src="https://picsum.photos/350/350?image=19")
+          img(alt='no image' src='https://picsum.photos/350/350?image=87')
+          img(alt='no image' src='https://picsum.photos/350/350?image=98')
+          img(alt='no image' src='https://picsum.photos/350/350?image=19')
         .row.middle.space-between.portfolio-row
-          img(src="https://picsum.photos/350/350?image=90")
-          img(src="https://picsum.photos/350/350?image=31")
-          img(src="https://picsum.photos/350/350?image=52")
-    section.hi-section.column.center.middle
-      img.hi-bg(src="assets/mc_rectangle.png")
-      img.hi-friend(src="assets/mc_hi_ma_friend.svg")
-      img.first-co(src="assets/mc_first_company_pictures.svg")
+          img(alt='no image' src='https://picsum.photos/350/350?image=90')
+          img(alt='no image' src='https://picsum.photos/350/350?image=31')
+          img(alt='no image' src='https://picsum.photos/350/350?image=52')
+    section.sm-hidden.hi-section.column.center.middle
+      img.hi-bg(alt='no image' src='assets/mc_rectangle.png')
+      img.hi-friend(alt='no image' src='assets/mc_hi_ma_friend.svg')
+      img.first-co(alt='no image' src='assets/mc_first_company_pictures.svg')
       .column.staff-pics
-        img(src="assets/img_ida.png")
-        img(src="assets/img_felu.png")
-        img(src="assets/img_santi.png")
+        img(alt='no image' src='assets/img_ida.png')
+        img(alt='no image' src='assets/img_felu.png')
+        img(alt='no image' src='assets/img_santi.png')
       .max-width-11.center.column.middle
         .column
           p.text-3.m-bottom-1
@@ -164,29 +172,29 @@ html(lang='en')
             | Start everyday with gratitude, be inspired, and wear happiness - its magnetic, and always, enjoy every single thing.
           p.text-3
             | “Che, se puede hablar spanglish in the company?”
-    section.contact-section.column.center.middle#contact
+    section.sm-hidden.contact-section.column.center.middle#contact
       .max-width-11.row.center.middle
         .social-networks-wrapper.flex-1.m-right-8
-          img.rectangle-black(src="assets/footer_rectangle_black.png")
+          img.rectangle-black(src='assets/footer_rectangle_black.png')
           .row.social-networks
-            img.m-right-1(src="assets/ic_cross.svg")
-            img.m-right-1(src="assets/LinkedIN_black.svg")
-            img.m-right-1(src="assets/Facebook_black.svg")
-            img.m-right-1(src="assets/Instagram_black.svg")
-          img.logo(src="assets/ic_logo_black.svg", alt="logo")
+            img.m-right-1(alt='no image' src='assets/ic_cross.svg')
+            img.m-right-1(alt='no image' src='assets/LinkedIN_black.svg')
+            img.m-right-1(alt='no image' src='assets/Facebook_black.svg')
+            img.m-right-1(alt='no image' src='assets/Instagram_black.svg')
+          img.logo(src='assets/ic_logo_black.svg' alt='logo')
         .column.flex-1
           .row.m-bottom-3
             h1.text-4.darkslategrey.base-text
               | DROP US AN EMAIL
             h1.text-13.darkslategrey.base-text
               | amigo
-          form.column(id="", method="", action="")
-            input.m-bottom-1(type="text" placeholder="Name")
-            input.m-bottom-1(type="email" placeholder="Email")
-            select.m-bottom-1(type="text" placeholder="Regarding")
-            textarea.m-bottom-2(placeholder="Message")
-            input.submit-button(type="submit" value="send")
-    footer.column.center.middle
+          form.column(id='' method='' action='')
+            input.m-bottom-1(type='text' placeholder='Name')
+            input.m-bottom-1(type='email' placeholder='Email')
+            select.m-bottom-1(type='text' placeholder='Regarding')
+            textarea.m-bottom-2(placeholder='Message')
+            input.submit-button(type='submit' value='send')
+    footer.sm-hidden.column.center.middle
       | Explore the world    
     // inject:js
     // endinject

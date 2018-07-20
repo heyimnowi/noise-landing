@@ -26,6 +26,12 @@ section {
   top: -70px;
 
   mix-blend-mode: exclusion;
+
+  @media (max-width: 768px) {
+    left: inherit;
+    right: 20px;
+    width: 160px;
+  }
 }
 
 .portfolio-row {
@@ -35,6 +41,10 @@ section {
   img,
   p {
     padding: 20px;
+
+    @media (max-width: 768px) {
+      padding: 2px;
+    }
   }
 
   img {
@@ -44,6 +54,11 @@ section {
 
   p {
     max-width: 66%;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+      line-height: 12px;
+    }
   }
 }
 
@@ -51,7 +66,6 @@ section {
   left: -70px;
   position: absolute;
   top: 50%;
-  transform: rotate(-90deg);
 }
 
 .left-fixed-img {
@@ -64,11 +78,30 @@ section {
 .main-section {
   padding: 0 80px;
   position: relative;
+  text-align: center;
+
+  .we-create-sweet {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 
   .cover-description {
     bottom: 20px;
     position: absolute;
     right: 70px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    min-height: inherit;
+    padding: 0;
+  }
+
+  .digital-agency {
+    top: 170px;
   }
 
   .ye-text {
@@ -81,6 +114,11 @@ section {
 
     img {
       max-height: 100%;
+    }
+
+    @media(max-width: 768px) {
+      height: 150px;
+      top: -40px;
     }
   }
 
@@ -95,6 +133,11 @@ section {
 
     img {
       max-height: 100%;
+    }
+
+    @media(max-width: 768px) {
+      bottom: 140px;
+      height: 160px;
     }
   }
 
@@ -117,6 +160,10 @@ section {
       }
     }
 
+    @media (max-width: 768px) {
+      margin-left: 70px;
+    }
+
     img {
       height: 100%;
       width: 100%;
@@ -134,13 +181,31 @@ section {
 .logo-section {
   position: relative;
 
-  img {
+  .logo {
     max-width: 100%;
     width: 450px;
+
+    @media (max-width: 768px) {
+      max-width: inherit;
+      width: 639px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 20px auto;
   }
 }
 
 .about-section {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+
+  .cross-img {
+    align-self: center;
+    margin-top: 40px;
+  }
+
   .image-wrapper {
     position: relative;
 
@@ -150,6 +215,10 @@ section {
       top: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  .what-we-do-mobile {
+    margin-top: 30px;
   }
 
   .about-section-description {
@@ -199,10 +268,98 @@ section {
       right: -60px;
     }
   }
+
+  .we-will-like-you-row {
+    align-items: flex-end;
+    margin-bottom: 75px;
+    position: relative;
+
+    .will-like-you {
+      margin-right: 20px;
+    }
+
+    .feet-img {
+      margin-right: -80px;
+    }
+
+    .bang-img {
+      bottom: -50px;
+      margin-bottom: 0;
+      position: absolute;
+      right: 90px;
+    }
+  }
+
+  .we-believe {
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 560px;
+    text-align: right;
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+      line-height: 25px;
+      max-width: 90%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .max-width-11 {
   max-width: 65%;
+}
+
+.product-section,
+.branding-section,
+.digital-section {
+  .max-width-11 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 768px) {
+    .max-width-11 {
+      align-items: flex-end;
+      flex-direction: column;
+      letter-spacing: 1.5px;
+      max-width: inherit;
+      padding-right: 30px;
+      position: relative;
+      width: 100%;
+    }
+
+    .links-wrapper {
+      display: block;
+      flex: inherit;
+      left: 80px;
+      position: absolute;
+      top: -50px;
+    }
+
+    .active-link {
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 18px;
+      margin: 0;
+      max-width: 100px;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    .sec-description {
+      flex: inherit;
+      width: 200px;
+    }
+  }
 }
 
 .product-section {
@@ -244,17 +401,74 @@ section {
   padding-bottom: 50px;
   padding-top: 160px;
 
+  .project-name {
+    align-self: flex-start;
+    margin-left: -20px;
+  }
+
   .project-wrapper {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+
     .project-desc {
       min-height: 370px;
+
+      @media (max-width: 768px) {
+        align-items: flex-end;
+        margin-top: -20px;
+        min-height: inherit;
+
+        .column {
+          align-items: flex-end;
+        }
+
+        span {
+          text-align: right;
+        }
+      }
     }
 
     &:first-child {
       margin-bottom: 130px;
+
+      img {
+        margin-right: 10px;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        margin-right: 0;
+      }
     }
 
     img {
       max-width: 60%;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        max-width: inherit;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    background: none;
+
+    .project-link {
+      margin-top: 20px;
     }
   }
 }

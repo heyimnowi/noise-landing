@@ -108,6 +108,22 @@
   }
 }
 
+.sm-hidden {
+  display: inherit;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.lg-hidden {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: inherit;
+  }
+}
+
 @for $i from 1 through 3 {
   .flex-#{$i} {
     flex: $i;
