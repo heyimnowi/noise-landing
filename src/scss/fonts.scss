@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Rozha+One');
 
 @font-face {
@@ -18,12 +17,16 @@
   font-family: 'GothamMedium';
 }
 
-$ubuntu: 'Ubuntu', sans-serif;
 $rozha: 'Rozha One', serif;
 
 .base-text {
   &.white {
     color: $white;
+
+    &.underline {
+      border-bottom: 5px solid $white;
+      padding-bottom: 5px;
+    }
   }
 
   &.bold {
@@ -32,6 +35,11 @@ $rozha: 'Rozha One', serif;
 
   &.black {
     color: $black;
+
+    &.underline {
+      border-bottom: 5px solid $black;
+      padding-bottom: 5px;
+    }
   }
 
   &.orange {
@@ -99,6 +107,7 @@ $rozha: 'Rozha One', serif;
 .text-6 {
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 2.5px;
 
   @media (max-width: 768px) {
     font-size: 10px;
@@ -109,6 +118,7 @@ $rozha: 'Rozha One', serif;
 .text-7 {
   font-size: 24px;
   line-height: 38px;
+  letter-spacing: 5.3px;
 }
 
 .text-8 {
@@ -152,4 +162,10 @@ $rozha: 'Rozha One', serif;
 .text-13 {
   font-size: 30px;
   line-height: 30px;
+}
+
+.text-14 {
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 4px;
 }

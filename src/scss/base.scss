@@ -1,5 +1,5 @@
 nav {
-  background: white;
+  background: rgba(255, 255, 255, 0.4);
   padding: 14px 48px;
   position: fixed;
   top: 0;
@@ -11,9 +11,13 @@ nav {
   }
 }
 
+h2 {
+  letter-spacing: 1.5px;
+}
+
 body {
   overflow-x: hidden;
-  padding-top: 120px;
+  padding-top: 100px;
 
   @media (max-width: 768px) {
     padding-top: 80px;
@@ -21,7 +25,7 @@ body {
 }
 
 section {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 80px);
 }
 
 .social-network-responsive {
@@ -91,15 +95,59 @@ section {
   transform: translateY(-50%);
 }
 
+.ye-text {
+  display: block;
+  height: 50%;
+  position: absolute;
+  right: 0px;
+  top: -25px;
+  z-index: 2;
+
+  img {
+    max-height: 100%;
+  }
+
+  @media(max-width: 768px) {
+    height: 150px;
+    top: -25px;
+  }
+}
+
+.hero {
+  position: relative;
+}
+
+.ah-text {
+  bottom: -25px;
+  display: block;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+
+  img {
+    max-height: 100%;
+  }
+
+  @media(max-width: 768px) {
+    bottom: 120px;
+    height: 160px;
+  }
+}
+
 .main-section {
   padding: 0 80px;
   position: relative;
   text-align: center;
   overflow-x: hidden;
+  height: calc(100vh - 130px);
 
   .we-create-sweet {
     margin: 0 auto;
     margin-top: 80px;
+  }
+
+  .left-fixed-img {
+    top: calc(50% - 40px);
   }
 
   .cover-description {
@@ -113,49 +161,9 @@ section {
   }
 
   @media (max-width: 768px) {
+    height: auto;
     min-height: inherit;
     padding: 0;
-  }
-
-  .digital-agency {
-    top: 170px;
-  }
-
-  .ye-text {
-    display: block;
-    height: 50%;
-    position: absolute;
-    right: -50px;
-    top: 70px;
-    z-index: 1;
-
-    img {
-      max-height: 100%;
-    }
-
-    @media(max-width: 768px) {
-      height: 150px;
-      top: -40px;
-    }
-  }
-
-  .ah-text {
-    bottom: -80px;
-    display: block;
-    font-size: 500px;
-    height: 50%;
-    left: -80px;
-    position: absolute;
-    z-index: 1;
-
-    img {
-      max-height: 100%;
-    }
-
-    @media(max-width: 768px) {
-      bottom: 140px;
-      height: 160px;
-    }
   }
 
   .main-section-bg {
@@ -174,7 +182,7 @@ section {
         @media (max-width: 768px) {
           bottom: -10px !important;
           top: inherit !important;
-          width: auto;
+          width: 120%;
           height: 270px;
         }
       }
@@ -209,6 +217,7 @@ section {
 .logo-section {
   overflow-x: hidden;
   position: relative;
+  height: 100vh;
 
   .logo {
     max-width: 100%;
@@ -230,6 +239,15 @@ section {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
+  height: 100vh;
+
+  .bang-row {
+    margin-right: -70px;
+  }
+
+  .what-we-do-link {
+    border-bottom: 2px solid black;
+  }
 
   .cross-img {
     align-self: center;
@@ -252,16 +270,31 @@ section {
   }
 
   .about-section-description {
-    padding-right: 20px;
+    padding-right: 80px;
 
     .really-great {
       max-width: 200px;
       text-align: right;
+      background-image: url('../assets/yellow_rect.svg');
+      background-repeat: no-repeat;
+      background-position: top right;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 3px;
+        align-self: center;
+        max-width: 230px;
+      }
     }
 
     .will-like-you {
       max-width: 280px;
       text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      padding: 20px;
     }
   }
 
@@ -278,7 +311,7 @@ section {
     font-size: 0;
     font-size: 0;
     position: relative;
-    width: 70%;
+    width: 80%;
 
     img {
       max-width: 100%;
@@ -325,6 +358,7 @@ section {
     line-height: 40px;
     max-width: 560px;
     text-align: right;
+    letter-spacing: 1.5px;
 
     @media (max-width: 768px) {
       font-size: 25px;
@@ -350,6 +384,12 @@ section {
   }
 }
 
+.bottom-links {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
+
 .product-section,
 .branding-section,
 .digital-section {
@@ -358,6 +398,11 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 80%;
+  }
+
+  .links-wrapper {
+    margin-right: 80px;
   }
 
   @media (max-width: 768px) {
@@ -377,9 +422,11 @@ section {
       left: 80px;
       position: absolute;
       top: -50px;
+      margin-right: 0;
     }
 
-    .active-link {
+    .active-link.white,
+    .active-link.black {
       border: none;
       font-size: 20px;
       font-weight: bold;
@@ -388,6 +435,7 @@ section {
       max-width: 100px;
       padding: 0;
       text-decoration: none;
+      border-bottom: none;
     }
 
     .sec-description {
@@ -411,6 +459,19 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  .bottom-links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    mix-blend-mode: exclusion;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .digital-section {
@@ -436,16 +497,16 @@ section {
 }
 
 .projects-section {
-  background-image: url('../assets/sec_2_noise.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 40%;
   padding-bottom: 50px;
-  padding-top: 160px;
+  padding-top: 50px;
 
   .project-name {
     align-self: flex-start;
     margin-left: -20px;
+  }
+
+  .max-width-11 {
+    max-width: 90%;
   }
 
   .project-wrapper {
@@ -472,32 +533,13 @@ section {
     }
 
     &:first-child {
-      margin-bottom: 130px;
-
       img {
-        margin-right: 10px;
+        margin-right: 30px;
 
         @media (max-width: 768px) {
           margin-right: 0;
+          max-width: 100%;
         }
-      }
-    }
-
-    &:last-child {
-      margin-right: 20px;
-
-      @media (max-width: 768px) {
-        flex-direction: column-reverse;
-        margin-right: 0;
-      }
-    }
-
-    img {
-      max-width: 60%;
-      @media (max-width: 768px) {
-        margin-right: 0;
-        max-width: inherit;
-        width: 100%;
       }
     }
 
@@ -508,6 +550,7 @@ section {
 
   @media (max-width: 768px) {
     background: none;
+    min-height: inherit;
 
     .project-link {
       margin-top: 20px;
@@ -518,7 +561,6 @@ section {
 footer {
   background-color: $black;
   color: $darkgray;
-  font-family: $ubuntu;
   font-size: 14px;
   min-height: 75px;
   width: 100%;
@@ -553,11 +595,11 @@ footer {
   //mix-blend-mode: exclusion;
   position: ABSOLUTE;
   right: 60px;
+  z-index: 1;
 }
 // Hi hi-section
 
 .hi-section {
-  overflow-x: hidden;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -580,15 +622,20 @@ footer {
     @media (max-width: 768px) {
       left: -10px;
       right: inherit;
-      width: 150%;
     }
   }
 
   .staff-pics {
     position: absolute;
     right: 30px;
-    top: calc(50% - 50px);
+    top: 50%;
     transform: translateY(-50%);
+
+    img {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
 
     @media (max-width: 768px) {
       top: 50%;
@@ -596,11 +643,19 @@ footer {
       img {
         height: auto;
         width: 80px;
-
-        &:not(:last-child) {
-          margin-bottom: 20px;
-        }
       }
+    }
+  }
+
+  .portfolio-section {
+    .max-width-11 {
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
+    }
+
+    h2 {
+      letter-spacing: 1.5px;
     }
   }
 

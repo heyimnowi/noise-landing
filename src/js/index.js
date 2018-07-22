@@ -8,11 +8,7 @@ $(document).ready(function() {
     delay: 500,
     origin: 'top'
   });
-  sr.reveal('.ah-text', {
-    duration: 500,
-    delay: 500,
-    origin: 'left'
-  });
+
 
   var scroll = new SmoothScroll('a[href*="#"]', {
   	ignore: '[data-scroll-ignore]',

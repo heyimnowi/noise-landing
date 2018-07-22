@@ -10,46 +10,47 @@ html(lang='en')
     nav
       a.logo-link(href='#home')
         img(src='assets/ic_logo_black.svg' alt='logo')
-      a.text-1.smooth-scroll(href='#about')
-        | ABOUT
-      a.text-1.smooth-scroll(href='#work')
-        | WORK
-      a.text-1.smooth-scroll(href='#portfolio')
-        | PORTFOLIO
       a.text-1.smooth-scroll(href='#contact')
         | CONTACT
+      a.text-1.smooth-scroll(href='#portfolio')
+        | PORTFOLIO
+      a.text-1.smooth-scroll(href='#product')
+        | WORK
+      a.text-1.smooth-scroll(href='#about')
+        | ABOUT
       a.icon.icon-menu
         .bar
         .bar
         .bar
-    section.main-section#home
-      img.left-fixed-img.sm-hidden(alt='no image' src='assets/adventure_is.svg')
-      img.left-fixed-img.lg-hidden.digital-agency(alt='no image' src='assets/digital_agency.svg')
-      span.ye-text
+    .hero
+      div.ye-text
         img(src='assets/ye.svg' alt='no image')
-      span.ah-text
+      div.ah-text
         img(src='assets/ah.svg' alt='no image')
-      #scene.main-section-bg
-        .main-section-bg-item(data-depth='0.1')
-          img(src='assets/cover_bg_1.jpg' alt='no image')
-        .main-section-bg-item(data-depth='0.7')
-          img.mountain-bg(alt='no image' src='assets/cover_layer_2.png')
-      .column.cover-description.start
-        img.m-bottom-3(alt='no image' src='assets/cover_desc.svg')
-        img(alt='no image' src='assets/ic_ok_gotit.svg')
-      img.m-bottom-3.we-create-sweet.lg-hidden(src='assets/we_create_sweet.svg')
+      section.main-section#home
+        img.left-fixed-img.sm-hidden(alt='no image' src='assets/adventure_is.svg')
+        img.left-fixed-img.lg-hidden.digital-agency(alt='no image' src='assets/digital_agency.svg')
+        #scene.main-section-bg
+          .main-section-bg-item(data-depth='0.1')
+            img(src='assets/cover_bg_1.jpg' alt='no image')
+          .main-section-bg-item(data-depth='0.7')
+            img.mountain-bg(alt='no image' src='assets/cover_layer_2.png')
+        .column.cover-description.start
+          img.m-bottom-3(alt='no image' src='assets/cover_desc.svg')
+          img(alt='no image' src='assets/ic_ok_gotit.svg')
+        img.m-bottom-3.we-create-sweet.lg-hidden(src='assets/we_create_sweet.svg')
     section.logo-section.row.center.middle#work
       img.left-fixed-img.sm-hidden(alt='no image' src='assets/another_beautiful.svg')
       img.logo(src='assets/sec_2_noise.svg' alt='no image')
     section#about.about-section
       .about-section-img.sm-hidden
         img(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
-        img(src='assets/sec_3_wo_really.png' data-rjs='assets/sec_3_wo_really@2x.png' alt='no image')
+        img(src='assets/sec_3_wo_really.svg' alt='no image')
         img(src='assets/sec_3_wave.png' data-rjs='assets/sec_3_wave@2x.png' alt='no image')
         p.about-section-caption.text-1.base-text.white
           | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
       .column.end.about-section-description
-        p.m-bottom-3.base-text.rozha.we-believe
+        h2.m-bottom-3.base-text.rozha.we-believe
           | We believe people like to work with people they like
         .row.we-will-like-you-row
           span.text-4.m-bottom-5.will-like-you
@@ -57,12 +58,13 @@ html(lang='en')
           .lg-hidden
             img.feet-img(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
             img.bang-img(src='assets/ic_bang.svg' alt='no image')
-        img.m-bottom-3.sm-hidden(src='assets/ic_bang.svg' alt='no image')
-        span.text-4.m-bottom-3.really-great.sm-hidden
+        .row.bang-row
+          img.m-bottom-3.m-right-2.sm-hidden(src='assets/ic_bang.svg' alt='no image')
+          img.m-bottom-3.sm-hidden(src='assets/cross.svg' alt='no image')
+        span.text-4.m-bottom-3.really-great
           | ps. We are really great at what we do!
-        img.lg-hidden.what-we-do-mobile(src='assets/what_we_do_mobile.svg' alt='no image')
-        a.m-bottom-10.sm-hidden
-          img(src='assets/ic_what_we_do.svg' alt='no image')
+        a.m-bottom-10.sm-hidden.text-5.bold.what-we-do-link
+          | WHAT WE D0
         img.lg-hidden.cross-img(src='assets/cross.svg' alt='no image')
     section#product.product-section.column.center.middle
       .max-width-11
@@ -76,6 +78,9 @@ html(lang='en')
             | Digital experience
         p.flex-3.text-6.sec-description
           | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
+      .bottom-links.sm-hidden
+        a.text-5(href='#contact')
+          | CONTACT US
     section#branding.branding-section.column.center.middle
       img.left-fixed-img(src='assets/turn_your_brand.svg' alt='no image')
       img.branding-cool.sm-hidden(src='assets/bd_cool.svg' alt='no image')
@@ -91,7 +96,12 @@ html(lang='en')
             | Digital experience
         p.flex-3.text-6.base-text.white.sec-description
           | We encourage you to dream and imagine, before you do. We tell people what you’re all about and craft your visual direction and brand with care and passion and make sure it’s all aligned. We’ll turn your brand into digital art.
-    section.digital-section.column.center.middle
+      .bottom-links.sm-hidden
+        a.text-5.base-text.white.underline(href='#portfolio')
+          | PORTFOLIO
+        a.text-5.base-text.white.underline(href='#contact')
+          | CONTACT US    
+    section.digital-section.column.center.middle#digital
       img.left-fixed-img(src='assets/digital_left_anchor.svg' alt='no image')
       .max-width-11
         .column.flex-2.start.p-right-10.links-wrapper
@@ -106,12 +116,15 @@ html(lang='en')
             | We have a clear mission, to make what you care about exciting for other people and to craft the greatest experiences and design. Apps, websites, platforms…we treat work as play and view ourselves as ultimate users of the products we make.
           p.text-6.base-text.white.sec-description
             | Ps. we love mind-blowing, stunning content and have close relations with talented photographers, video producers and writers.
+      .bottom-links.sm-hidden
+        a.text-5.base-text.white.underline(href='#contact')
+          | CONTACT US    
     section.projects-section.column.center.middle
       .max-width-11
         .project-wrapper
-          span.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
+          h2.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
             | Go Amper
-          img(src='https://picsum.photos/750/750?image=75' alt='no image')
+          img(src='assets/amper.png' alt='no image')
           .column.project-desc.space-between
             .column
               span.base-text.rozha-font.text-10.m-bottom-2.rozha.sm-hidden
@@ -120,46 +133,32 @@ html(lang='en')
                 | Electric skateboard
               span.text-8
                 | We choose happiness. We believe that what we do everyday should make us happy.
-            a.text-8.base-text.silver.bold.project-link(href='www.goamper.com.cl' target='_blank')
+            a.text-8.base-text.silver.bold.project-link(href='http://www.goamper.com.cl' target='_blank')
               | WWW.GOAMPER.COM.CL
-        .project-wrapper
-          .column.text-right.project-desc.space-between
-            .column.end
-              span.base-text.rozha-font.text-10.m-bottom-2.rozha.sm-hidden
-                | Syrmo
-              span.text-9.m-bottom-3.mw-2
-                | Skateboard traker
-              span.text-8
-                | We choose happiness. We believe that what we do everyday should make us happy.
-            a.text-8.base-text.silver.bold.project-link(href='www.syrmo.com' target='_blank')
-              | WWW.SYRMO.COM
-          img(src='https://picsum.photos/750/750?image=89' alt='no image')
-          span.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
-            | Syrmo
-    section.column.center#portfolio
+    section.column.center.portfolio-section#portfolio
       .max-width-11
-        h3.self-start.text-12.darkslategrey.rozha.base-text
+        h2.self-start.text-12.darkslategrey.rozha.base-text
           | Cool stuff
         .row.middle.space-between.portfolio-row
-          img(alt='no image' src='https://picsum.photos/350/350?image=10')
-          img(alt='no image' src='https://picsum.photos/350/350?image=21')
-          img(alt='no image' src='https://picsum.photos/350/350?image=32')
+          img(alt='no image' src='assets/1.png')
+          img(alt='no image' src='assets/2.png')
+          img(alt='no image' src='assets/3.png')
         .row.middle.space-between.portfolio-row
-          img(alt='no image' src='https://picsum.photos/350/350?image=43')
-          img(alt='no image' src='https://picsum.photos/350/350?image=54')
-          img(alt='no image' src='https://picsum.photos/350/350?image=65')
+          img(alt='no image' src='assets/4.png')
+          img(alt='no image' src='assets/5.png')
+          img(alt='no image' src='assets/circle_cross.svg')
         .row.middle.space-between.portfolio-row
-          img(alt='no image' src='https://picsum.photos/350/350?image=76')
-          p
+          img(alt='no image' src='assets/6.png')
+          p.text-4
             | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
         .row.middle.space-between.portfolio-row
-          img(alt='no image' src='https://picsum.photos/350/350?image=87')
-          img(alt='no image' src='https://picsum.photos/350/350?image=98')
-          img(alt='no image' src='https://picsum.photos/350/350?image=19')
+          img(alt='no image' src='assets/7.png')
+          img(alt='no image' src='assets/8.png')
+          img(alt='no image' src='assets/9.png')
         .row.middle.space-between.portfolio-row
-          img(alt='no image' src='https://picsum.photos/350/350?image=90')
-          img(alt='no image' src='https://picsum.photos/350/350?image=31')
-          img(alt='no image' src='https://picsum.photos/350/350?image=52')
+          img(alt='no image' src='assets/10.png')
+          img(alt='no image' src='assets/11.png')
+          img(alt='no image' src='assets/12.png')
     section.hi-section
       img.hi-bg(alt='no image' src='assets/mc_rectangle.png')
       img.hi-friend(alt='no image' src='assets/mc_hi_ma_friend.svg')
