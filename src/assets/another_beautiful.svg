@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="11px" height="377px" viewBox="0 0 11 377" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
     <title>ANOTHER BEAUTIFUL DA</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="GothamMedium, Gotham Medium" font-size="12" font-weight="normal" letter-spacing="2.4">
-        <g id="Landing-noise" transform="translate(-14.000000, -1747.000000)" fill="#000000">
-            <text id="ANOTHER-BEAUTIFUL-DA" transform="translate(25.000000, 1934.000000) rotate(-90.000000) translate(-25.000000, -1934.000000) ">
-                <tspan x="-165" y="1932">ANOTHER BEAUTIFUL DAY IN PARADISE, BRO</tspan>
-            </text>
-        </g>
+        <text id="ANOTHER-BEAUTIFUL-DA" transform="translate(11.000000, 187.000000) rotate(-90.000000) translate(-11.000000, -187.000000) " fill="#000000">
+            <tspan x="-179" y="185">ANOTHER BEAUTIFUL DAY IN PARADISE, BRO</tspan>
+        </text>
     </g>
 </svg>

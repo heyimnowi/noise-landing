@@ -3,15 +3,25 @@ $(document).ready(function() {
   var parallaxInstance = new Parallax(scene);
 
   var sr = ScrollReveal();
-  sr.reveal('.image-wrapper', {
+  sr.reveal('.left-scroll', {
     duration: 500,
-    delay: 500,
+    delay: 400,
+    origin: 'left'
+  });
+  sr.reveal('.right-scroll', {
+    duration: 500,
+    delay: 400,
+    origin: 'right'
+  });
+  sr.reveal('.top-scroll', {
+    duration: 500,
+    delay: 400,
     origin: 'top'
   });
-  sr.reveal('.ah-text', {
+  sr.reveal('.bottom-scroll', {
     duration: 500,
-    delay: 500,
-    origin: 'left'
+    delay: 400,
+    origin: 'bottom'
   });
 
   var scroll = new SmoothScroll('a[href*="#"]', {
@@ -24,9 +34,11 @@ $(document).ready(function() {
     offset: 50
   });
 
-  $( ".icon-menu" ).click(function() {
-    console.log("tu vieja")
+  $(".icon-menu" ).click(function() {
     $('nav').toggleClass('responsive');
   });
 
+  $("nav .smooth-scroll" ).click(function() {
+    $('nav').removeClass('responsive');
+  });
 });

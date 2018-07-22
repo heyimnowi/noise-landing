@@ -1,29 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Rozha+One');
 
 @font-face {
-  font-family: 'GothamBold';
-  src: url('fonts/GothamBold.ttf');
+  font-family: 'Gotham-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/bold/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/bold/Gotham-Bold.woff') format('woff'), url('fonts/bold/Gotham-Bold.ttf') format('truetype'), url('fonts/bold/Gotham-Bold.svg#Gotham-Bold') format('svg');
 }
+
 @font-face {
-  font-family: 'GothamLight';
-  src: url('fonts/GothamLight.ttf');
+  font-family: 'Gotham-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/light/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('fonts/light/Gotham-Light.woff') format('woff'), url('fonts/light/Gotham-Light.ttf') format('truetype'), url('/fonts/light/Gotham-Light.svg#Gotham-Bold') format('svg');
 }
+
 @font-face {
-  font-family: 'GothamMedium';
-  src: url('fonts/GothamMedium.ttf');
+  font-family: 'Gotham-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/medium/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/medium/Gotham-Medium.woff') format('woff'), url('fonts/medium/Gotham-Medium.ttf') format('truetype'), url('fonts/medium/Gotham-Medium.svg#Gotham-Bold') format('svg');
 }
+
 
 * {
-  font-family: 'GothamMedium';
+  font-family: 'Gotham Medium', sans-serif;
 }
 
-$ubuntu: 'Ubuntu', sans-serif;
 $rozha: 'Rozha One', serif;
 
 .base-text {
   &.white {
     color: $white;
+
+    &.underline {
+      border-bottom: 5px solid $white;
+      padding-bottom: 5px;
+    }
   }
 
   &.bold {
@@ -32,6 +44,11 @@ $rozha: 'Rozha One', serif;
 
   &.black {
     color: $black;
+
+    &.underline {
+      border-bottom: 5px solid $black;
+      padding-bottom: 5px;
+    }
   }
 
   &.orange {
@@ -98,6 +115,7 @@ $rozha: 'Rozha One', serif;
 
 .text-6 {
   font-size: 16px;
+  letter-spacing: 2.5px;
   line-height: 30px;
 
   @media (max-width: 768px) {
@@ -108,6 +126,7 @@ $rozha: 'Rozha One', serif;
 
 .text-7 {
   font-size: 24px;
+  letter-spacing: 5.3px;
   line-height: 38px;
 }
 
@@ -152,4 +171,10 @@ $rozha: 'Rozha One', serif;
 .text-13 {
   font-size: 30px;
   line-height: 30px;
+}
+
+.text-14 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 33px;
 }
