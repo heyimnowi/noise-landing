@@ -24,17 +24,32 @@ html(lang='en')
       gtag('config', 'UA-122664694-1');
 
   body
-    nav
+    nav.sm-hidden
       a.logo-link(href='#home')
         img(src='assets/ic_logo_black.svg' alt='logo')
       a.text-1.smooth-scroll(href='#contact')
         | CONTACT
-      a.text-1.smooth-scroll(href='#portfolio')
-        | PORTFOLIO
-      a.text-1.smooth-scroll(href='#product')
+      a.text-1.smooth-scroll(href='#work')
         | WORK
       a.text-1.smooth-scroll(href='#about')
         | ABOUT
+      a.text-1.smooth-scroll(href='#home')
+        | HOME
+      a.icon.icon-menu
+        .bar
+        .bar
+        .bar
+    nav.lg-hidden
+      a.logo-link(href='#home')
+        img(src='assets/ic_logo_black.svg' alt='logo')
+      a.text-1.smooth-scroll(href='#home')
+        | HOME
+      a.text-1.smooth-scroll(href='#about')
+        | ABOUT
+      a.text-1.smooth-scroll(href='#work')
+        | WORK
+      a.text-1.smooth-scroll(href='#contact')
+        | CONTACT
       a.icon.icon-menu
         .bar
         .bar
@@ -49,14 +64,14 @@ html(lang='en')
         #scene.main-section-bg
           .main-section-bg-item(data-depth='0.1')
             img(src='assets/cover_bg_1.jpg' alt='no image')
-          .main-section-bg-item(data-depth='0.7')
+          .main-section-bg-item(data-depth='0.2')
             img.mountain-bg(alt='no image' src='assets/cover_mountains.png' data-rjs='assets/cover_mountains@2x.png')
         .column.cover-description.start
-          img.m-bottom-3(alt='no image' src='assets/noise_description.png' data-rjs='assets/noise_description@2x.png')
+          img.m-bottom-3(alt='no image' src='assets/noise_description.svg')
           span.ok-gotit
-            | - OK GOT IT
-        img.m-bottom-3.we-create-sweet.lg-hidden.right-scroll(src='assets/noise_description.png' data-rjs='assets/noise_description@2x.png')
-    section.logo-section.row.center.middle#work
+            | - Got a project? Let’s talk!
+        img.m-bottom-3.we-create-sweet.lg-hidden.right-scroll(src='assets/noise_description.svg')
+    section.logo-section.row.center.middle
       img.left-fixed-img.sm-hidden.left-scroll(alt='no image' src='assets/another_beautiful.svg')
       img.logo.bottom-scroll(src='assets/sec_2_noise.svg' alt='no image')
     section#about.about-section
@@ -65,23 +80,25 @@ html(lang='en')
         img.bottom-scroll(src='assets/sec_3_wo_really.svg' alt='no image')
         img.bottom-scroll(src='assets/sec_3_wave.png' data-rjs='assets/sec_3_wave@2x.png' alt='no image')
         p.about-section-caption.text-1.base-text.white.bottom-scroll
-          | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
+          | From innovative design to creative storytelling to catching a wave to finding pure bliss in nature, we always strive for excellence and enjoyment.
       .column.end.about-section-description
-        h2.m-bottom-3.base-text.rozha.we-believe.bottom-scroll
-          | We believe people like to work with people they like
+        h2.m-bottom-3.base-text.rozha.we-believe.bottom-scroll.sm-hidden
+          | We collaborate with like-minded innovators, creatives and adventurers in the realm of adventure sports & outdoor activities.
+        h2.m-bottom-3.base-text.rozha.we-believe.bottom-scroll.lg-hidden
+          | We collaborate with creatives and adventurers in the realm of adventure sports & outdoor activities.
         .row.we-will-like-you-row
           span.text-4.m-bottom-5.will-like-you.bottom-scroll
-            | And we will like you!
+            | We will bring your idea to life
           .lg-hidden
             img.feet-img.bottom-scroll(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
             img.bang-img.bottom-scroll(src='assets/ic_bang.svg' alt='no image')
         .row.bang-row
           img.m-bottom-3.m-right-2.sm-hidden.bottom-scroll(src='assets/ic_bang.svg' alt='no image')
           img.m-bottom-3.sm-hidden.bottom-scroll(src='assets/cross.svg' alt='no image')
-        span.text-4.m-bottom-3.really-great.bottom-scroll
-          | ps. We are really great at what we do!
-        a.m-bottom-10.sm-hidden.text-5.bold.what-we-do-link.bottom-scroll(href="#portfolio")
-          | WHAT WE D0
+        p.m-bottom-3.text-4.really-great
+          | ps. We are really great at
+          a.text-4(href="#work")
+            | What we do!
         img.lg-hidden.cross-img(src='assets/cross.svg' alt='no image')
     section#product.product-section.column.center.middle
       .max-width-11
@@ -90,11 +107,11 @@ html(lang='en')
           a.text-7.active-link.m-bottom-3.black.base-text.bottom-scroll(href='#product')
             | Product Strategy
           a.text-7.opacity-4.m-bottom-3.black.base-text.sm-hidden.bottom-scroll(href='#branding')
-            | Branding Development
+            | Brand Development
           a.text-7.opacity-4.black.base-text.sm-hidden.bottom-scroll(href='#digital')
-            | Digital experience
+            | Digital Experience
         p.flex-3.text-6.sec-description.bottom-scroll
-          | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
+          | We have trouble settling down with the known and familiar. Together we will go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.          
       .bottom-links.sm-hidden.bottom-scroll
         a.text-5(href='#contact')
           | CONTACT US
@@ -108,13 +125,13 @@ html(lang='en')
           a.text-7.m-bottom-3.base-text.white.opacity-4.sm-hidden.bottom-scroll(href='#product')
             | Product Strategy
           a.text-7.m-bottom-3.active-link.base-text.white.bottom-scroll(href='#branding')
-            | Branding Development
+            | Brand Development
           a.text-7.opacity-4.base-text.white.sm-hidden.bottom-scroll(href='#digital')
-            | Digital experience
+            | Digital Experience
         p.flex-3.text-6.base-text.white.sec-description.bottom-scroll
-          | We encourage you to dream and imagine, before you do. We tell people what you’re all about and craft your visual direction and brand with care and passion and make sure it’s all aligned. We’ll turn your brand into digital art.
+          | We encourage you to dream and imagine, before you do. We tell people what you’re all about and craft your visual direction and brand with care and passion and make sure it’s all aligned. We will turn your brand into digital art.
       .bottom-links.sm-hidden.bottom-scroll
-        a.text-5.base-text.white.underline(href='#portfolio')
+        a.text-5.base-text.white.underline(href='#work')
           | PORTFOLIO
         a.text-5.base-text.white.underline(href='#contact')
           | CONTACT US    
@@ -125,18 +142,18 @@ html(lang='en')
           a.text-7.m-bottom-3.base-text.opacity-4.white.sm-hidden.bottom-scroll(href='#product')
             | Product Strategy
           a.text-7.m-bottom-3.base-text.opacity-4.white.sm-hidden.bottom-scroll(href='#branding')
-            | Branding Development
+            | Brand Development
           a.text-7.base-text.active-link.white.bottom-scroll(href='#digital')
-            | Digital experience
+            | Digital Experience
         .flex-3.column
           p.text-6.base-text.white.m-bottom-2.sec-description.bottom-scroll
-            | We have a clear mission, to make what you care about exciting for other people and to craft the greatest experiences and design. Apps, websites, platforms…we treat work as play and view ourselves as ultimate users of the products we make.
+            | We make what you care about exciting for other people. Be it a website, a platform, an app or something else entirely, we craft unforgettable experiences. We're fans and users of the products our clients create.
           p.text-6.base-text.white.sec-description.bottom-scroll
-            | Ps. we love mind-blowing, stunning content and have close relations with talented photographers, video producers and writers.
+            | Ps. We're motivated by mind-blowing, stunning content. We collaborate with talented photographers, cinematographers and writers.
       .bottom-links.sm-hidden.bottom-scroll
         a.text-5.base-text.white.underline(href='#contact')
           | CONTACT US    
-    section.projects-section.column.center.middle
+    section.projects-section.column.center.middle#work
       .max-width-11
         .project-wrapper
           h2.base-text.rozha-font.text-10.rozha.lg-hidden.project-name
@@ -149,82 +166,119 @@ html(lang='en')
               span.text-9.m-bottom-3.mw-2.right-scroll
                 | Electric skateboard
               span.text-8.right-scroll
-                | We choose happiness. We believe that what we do everyday should make us happy.
-            a.text-8.base-text.silver.bold.project-link.right-scroll(href='http://www.goamper.com.cl' target='_blank')
+                | Skateboards are awesome to move with, gives you the chance to enjoy fresh air and is great for the environment! Amper is an electric motorized system that works on any longboard or skateboard available on the market. No more boring commute - shred the city roads and beat the traffic with Amper.
+            a.text-8.base-text.silver.bold.project-link.right-scroll(href='http://www.goamper.cl' target='_blank')
               | WWW.GOAMPER.COM.CL
     section.column.center.portfolio-section#portfolio
       img.left-fixed-img.left-scroll(src='assets/things_we_do.svg' alt='no image')
       .max-width-11
         h2.self-start.text-12.darkslategrey.rozha.base-text.left-scroll
-          | Cool stuff
-        .row.middle.space-between.portfolio-row
-          img.bottom-scroll(alt='no image' src='assets/1.png' data-rjs='assets/1@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/2.png' data-rjs='assets/2@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/3.png' data-rjs='assets/3@2x.png')
-        .row.middle.space-between.portfolio-row
-          img.bottom-scroll(alt='no image' src='assets/4.png' data-rjs='assets/4@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/5.png' data-rjs='assets/5@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/circle_cross.svg')
-        .row.middle.space-between.portfolio-row
-          img.bottom-scroll(alt='no image' src='assets/6.png' data-rjs='assets/6@2x.png')
-          p.text-4.right-scroll
-            | We have trouble settling down with the known and familiar. Together we’ll go on a one-of-a-kind exploration expedition around your idea, to help you do different things and do things differently.
-        .row.middle.space-between.portfolio-row
-          img.bottom-scroll(alt='no image' src='assets/7.png' data-rjs='assets/7@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/8.png' data-rjs='assets/8@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/9.png' data-rjs='assets/9@2x.png')
-        .row.middle.space-between.portfolio-row
-          img.bottom-scroll(alt='no image' src='assets/10.png' data-rjs='assets/10@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/11.png' data-rjs='assets/11@2x.png')
-          img.bottom-scroll(alt='no image' src='assets/12.png' data-rjs='assets/12@2x.png')
-    section.hi-section
-      img.hi-bg.left-scroll(alt='no image' src='assets/rectangle_frame.png' data-rjs='assets/rectangle_frame@2x.png')
-      img.hi-friend(alt='no image' src='assets/mc_hi_ma_friend.svg')
-      img.first-co.right-scroll(alt='no image' src='assets/mc_first_company_pictures.svg')
-      img.ef-img.right-scroll(alt='no image' src='assets/bg_ef.svg')
-      .column.staff-pics
-        img.bottom-scroll(alt='no image' src='assets/img_ida.png' data-rjs='assets/img_ida@2x.png')
-        img.bottom-scroll(alt='no image' src='assets/img_felu.png' data-rjs='assets/img_felu@2x.png')
-        img.bottom-scroll(alt='no image' src='assets/img_santi.png' data-rjs='assets/img_santi@2x.png')
-      .max-width-11.center.column.middle
-        .column
-          p.text-3.m-bottom-1.left-scroll
-            | Noise is built by some reckless individualsthat keep seeking new places and experiences on high peaks, majestic ocean and new paths. As a plus, we are really talented and hardworking, and people in general say we are fantastic human beings.
-          p.text-3.m-bottom-1.left-scroll
-            | Start everyday with gratitude, be inspired, and wear happiness - its magnetic, and always, enjoy every single thing.
-          p.text-3.left-scroll
-            | “Che, se puede hablar spanglish in the company?”
+          | Work
+        .sm-hidden
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/1.png' data-rjs='assets/1@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/2.png' data-rjs='assets/2@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/3.png' data-rjs='assets/3@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/4.png' data-rjs='assets/4@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/5.png' data-rjs='assets/5@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/circle_cross.svg')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/6.png' data-rjs='assets/6@2x.png')
+            p.text-8.right-scroll.column.space-between
+              span.m-bottom-3.text-8
+                | We believe what we do every day should make us happy. When you're doing what you love, weekends don't exist. We're a tight-knit team that chooses to work with people and brands we admire and feel fortunate working with. 
+              span.text-8
+                | If our mission stirs the adventurer in you, we would love to collaborate! 
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/7.png' data-rjs='assets/7@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/8.png' data-rjs='assets/8@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/9.png' data-rjs='assets/9@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/10.png' data-rjs='assets/10@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/11.png' data-rjs='assets/11@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/12.png' data-rjs='assets/12@2x.png')
+        .lg-hidden
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/1.png' data-rjs='assets/1@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/2.png' data-rjs='assets/2@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/3.png' data-rjs='assets/3@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/4.png' data-rjs='assets/4@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/5.png' data-rjs='assets/5@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/6.png' data-rjs='assets/6@2x.png')
+          p.text-8.right-scroll.column.space-between.work-text
+            span.m-bottom-3.text-8
+              | We believe what we do every day should make us happy. When you're doing what you love, weekends don't exist. We're a tight-knit team that chooses to work with people and brands we admire and feel fortunate working with. 
+            span.text-8
+              | If our mission stirs the adventurer in you, we would love to collaborate! 
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/7.png' data-rjs='assets/7@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/8.png' data-rjs='assets/8@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/9.png' data-rjs='assets/9@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/10.png' data-rjs='assets/10@2x.png')
+          .row.middle.space-between.portfolio-row
+            img.bottom-scroll(alt='no image' src='assets/11.png' data-rjs='assets/11@2x.png')
+            img.bottom-scroll(alt='no image' src='assets/12.png' data-rjs='assets/12@2x.png')
     section.contact-section.column.center.middle#contact
-      .max-width-11.row.center.start
-        .social-networks-wrapper.flex-1.m-right-8.sm-hidden
-          img.rectangle-black(src='assets/footer_rectangle_black.png')
-          .row.social-networks
-            img.m-right-1(alt='no image' src='assets/ic_cross.svg')
-            img.m-right-1(alt='no image' src='assets/LinkedIN_black.svg')
-            img.m-right-1(alt='no image' src='assets/Facebook_black.svg')
-            img.m-right-1(alt='no image' src='assets/Instagram_black.svg')
-          img.logo(src='assets/ic_logo_black.svg' alt='logo')
+      .max-width-11.contact-section-max
+        .social-networks-wrapper.flex-1
+          .rect-wrapper
+            img.rectangle-black(src='assets/footer_rectangle_black.png')
+            .content-wrapper
+              p.text-15.m-bottom-3
+                | We are Noise - 
+              p.m-bottom-3.text-15.lg-hidden
+                | we’re unsettled souls constantly in search of new places and experiences on high peaks, in majestic oceans and on new paths. We push limits, with our work and our adventure. We're also good at what we do; from the jagged peaks of Patagonia to the deep blue fjords of Norway, we get the job done on time and with high quality. As a plus, people in general say we are fantastic human beings. 
+              p.m-bottom-3.text-15.sm-hidden
+                | We are Noise - we push limits, with our work and our adventure. We're also good at what we do; from the jagged peaks of Patagonia to the deep blue fjords of Norway, we get the job done on time and with high quality. As a plus, people in general say we are fantastic human beings.
+              p.text-15
+                | Our life and work philosophy? Start every day with gratitude, live inspired and emit happiness—it's magnetic.
         .column.flex-1
-          .lg-hidden.social-network-responsive
-            img.m-right-1(alt='no image' src='assets/LinkedIN_black.svg')
-            img.m-right-1(alt='no image' src='assets/Facebook_black.svg')
-            img.m-right-1(alt='no image' src='assets/Instagram_black.svg')
           .m-bottom-3.drop-us-wrapper
-            h1.text-4.darkslategrey.base-text.drop-us.bottom-scroll
-              | DROP US AN EMAIL
-            h1.text-13.darkslategrey.base-text.amigo.bottom-scroll
-              | amigo
+            h1.excited.m-bottom-2.bottom-scroll
+              | Are you as excited as we are?
+            h1.text-4.darkslategrey.base-text.drop-us.bottom-scroll.m-bottom-6
+              | drop us an email, amigo!
             .email-wrapper.bottom-scroll
               img(src="assets/ic_mail_yellow.svg")
-              a.email(href="mailto:hello@noisestudio.co")
-                | hello@noisestudio.co 
-    footer.column.center.middle
-      img.m-bottom-2.lg-hidden(src="assets/logo_white.svg", alt="")
-      .lg-hidden.m-bottom-4
-        | Adventure is everywhere
-      .lg-hidden
-        img.m-right-1(alt='no image' src='assets/LinkedIN_white.svg')
-        img.m-right-1(alt='no image' src='assets/Facebook_white.svg')
-        img.m-right-1(alt='no image' src='assets/Instagram_White.svg')
+              a.email(href='mailto:hello@noisestudio.co')
+                | hello@noisestudio.co
+    footer.row.space-between.middle.sm-hidden
+      a.email-footer(href='mailto:hello@noisestudio.co')
+        | hello@noisestudio.co
+      .row.center.middle
+        span.copyright.m-right-1
+          | © Copyright 2018 
+        a.m-right-1(target="_blank" href="https://www.linkedin.com/company/noisestudioco")
+          img(alt='no image' src='assets/ic_linkedin.svg')
+        a.m-right-1(target="_blank" href="https://www.facebook.com/noisestudioco")
+          img(alt='no image' src='assets/ic_facebook.svg')
+        a.m-right-1(target="_blank" href="https://www.instagram.com/noisestudioco")
+          img(alt='no image' src='assets/ic_instagram.svg')
+        a.m-right-1(target="_blank" href="https://dribbble.com/noisestudioco")
+          img(alt='no image' src='assets/ic_behance.svg')
+        a.m-right-1(target="_blank" href="https://www.behance.net/noisestudioco")
+          img(alt='no image' src='assets/ic_dribble.svg')
+    footer.column.center.middle.lg-hidden
+      img.m-bottom-2(src="assets/logo_white.svg", alt="")
+      a.email-footer.m-bottom-2(href='mailto:hello@noisestudio.co')
+        | hello@noisestudio.co
+      span.copyright.m-bottom-2
+        | © Copyright 2018 
+      .row.center.middle
+        a.m-right-1(target="_blank" href="https://www.linkedin.com/company/noisestudioco")
+          img(alt='no image' src='assets/ic_linkedin.svg')
+        a.m-right-1(target="_blank" href="https://www.facebook.com/noisestudioco")
+          img(alt='no image' src='assets/ic_facebook.svg')
+        a.m-right-1(target="_blank" href="https://www.instagram.com/noisestudioco")
+          img(alt='no image' src='assets/ic_instagram.svg')
+        a.m-right-1(target="_blank" href="https://dribbble.com/noisestudioco")
+          img(alt='no image' src='assets/ic_behance.svg')
+        a.m-right-1(target="_blank" href="https://www.behance.net/noisestudioco")
+          img(alt='no image' src='assets/ic_dribble.svg')
+
     // inject:js
     // endinject
