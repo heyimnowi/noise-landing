@@ -68,9 +68,8 @@ html(lang='en')
             img.mountain-bg(alt='no image' src='assets/cover_mountains.png' data-rjs='assets/cover_mountains@2x.png')
         .column.cover-description.start
           img.m-bottom-3(alt='no image' src='assets/noise_description.svg')
-          span.ok-gotit
+          a.ok-gotit(href="#contact")
             | - Got a project? Let’s talk!
-        img.m-bottom-3.we-create-sweet.lg-hidden.right-scroll(src='assets/noise_description.svg')
     section.logo-section.row.center.middle
       img.left-fixed-img.sm-hidden.left-scroll(alt='no image' src='assets/another_beautiful.svg')
       img.logo.bottom-scroll(src='assets/sec_2_noise.svg' alt='no image')
@@ -91,7 +90,6 @@ html(lang='en')
             | We will bring your idea to life
           .lg-hidden
             img.feet-img.bottom-scroll(alt='no image' src='assets/sec_3_feet.png' data-rjs='assets/sec_3_feet@2x.png')
-            img.bang-img.bottom-scroll(src='assets/ic_bang.svg' alt='no image')
         .row.bang-row
           img.m-bottom-3.m-right-2.sm-hidden.bottom-scroll(src='assets/ic_bang.svg' alt='no image')
           img.m-bottom-3.sm-hidden.bottom-scroll(src='assets/cross.svg' alt='no image')
@@ -223,27 +221,26 @@ html(lang='en')
             img.bottom-scroll(alt='no image' src='assets/11.png' data-rjs='assets/11@2x.png')
             img.bottom-scroll(alt='no image' src='assets/12.png' data-rjs='assets/12@2x.png')
     section.contact-section.column.center.middle#contact
+      .overlay
       .max-width-11.contact-section-max
         .social-networks-wrapper.flex-1
           .rect-wrapper
-            img.rectangle-black(src='assets/footer_rectangle_black.png')
             .content-wrapper
               p.text-15.m-bottom-3
                 | We are Noise - 
               p.m-bottom-3.text-15.lg-hidden
                 | we’re unsettled souls constantly in search of new places and experiences on high peaks, in majestic oceans and on new paths. We push limits, with our work and our adventure. We're also good at what we do; from the jagged peaks of Patagonia to the deep blue fjords of Norway, we get the job done on time and with high quality. As a plus, people in general say we are fantastic human beings. 
               p.m-bottom-3.text-15.sm-hidden
-                | We are Noise - we push limits, with our work and our adventure. We're also good at what we do; from the jagged peaks of Patagonia to the deep blue fjords of Norway, we get the job done on time and with high quality. As a plus, people in general say we are fantastic human beings.
+                | we push limits, with our work and our adventure. We're also good at what we do; from the jagged peaks of Patagonia to the deep blue fjords of Norway, we get the job done on time and with high quality. As a plus, people in general say we are fantastic human beings.
               p.text-15
                 | Our life and work philosophy? Start every day with gratitude, live inspired and emit happiness—it's magnetic.
         .column.flex-1
           .m-bottom-3.drop-us-wrapper
-            h1.excited.m-bottom-2.bottom-scroll
+            h1.excited.m-bottom-2.bottom-scroll.base-text.light
               | Are you as excited as we are?
             h1.text-4.darkslategrey.base-text.drop-us.bottom-scroll.m-bottom-6
-              | drop us an email, amigo!
+              | Drop us an email, Amigo!
             .email-wrapper.bottom-scroll
-              img(src="assets/ic_mail_yellow.svg")
               a.email(href='mailto:hello@noisestudio.co')
                 | hello@noisestudio.co
     footer.row.space-between.middle.sm-hidden
@@ -254,7 +251,7 @@ html(lang='en')
           | © Copyright 2018 
         a.m-right-1(target="_blank" href="https://www.linkedin.com/company/noisestudioco")
           img(alt='no image' src='assets/ic_linkedin.svg')
-        a.m-right-1(target="_blank" href="https://www.facebook.com/noisestudioco")
+        a.m-right-1(target="_blank" href="https://www.facebook.com/Noisestudioco-1963436073967748/")
           img(alt='no image' src='assets/ic_facebook.svg')
         a.m-right-1(target="_blank" href="https://www.instagram.com/noisestudioco")
           img(alt='no image' src='assets/ic_instagram.svg')
@@ -263,22 +260,21 @@ html(lang='en')
         a.m-right-1(target="_blank" href="https://www.behance.net/noisestudioco")
           img(alt='no image' src='assets/ic_dribble.svg')
     footer.column.center.middle.lg-hidden
-      img.m-bottom-2(src="assets/logo_white.svg", alt="")
       a.email-footer.m-bottom-2(href='mailto:hello@noisestudio.co')
         | hello@noisestudio.co
-      span.copyright.m-bottom-2
-        | © Copyright 2018 
-      .row.center.middle
-        a.m-right-1(target="_blank" href="https://www.linkedin.com/company/noisestudioco")
+      .row.center.middle.m-bottom-2
+        a.m-right-1.social-icon(target="_blank" href="https://www.linkedin.com/company/noisestudioco")
           img(alt='no image' src='assets/ic_linkedin.svg')
-        a.m-right-1(target="_blank" href="https://www.facebook.com/noisestudioco")
+        a.m-right-1.social-icon(target="_blank" href="https://www.facebook.com/Noisestudioco-1963436073967748/")
           img(alt='no image' src='assets/ic_facebook.svg')
-        a.m-right-1(target="_blank" href="https://www.instagram.com/noisestudioco")
+        a.m-right-1.social-icon(target="_blank" href="https://www.instagram.com/noisestudioco")
           img(alt='no image' src='assets/ic_instagram.svg')
-        a.m-right-1(target="_blank" href="https://dribbble.com/noisestudioco")
+        a.m-right-1.social-icon(target="_blank" href="https://dribbble.com/noisestudioco")
           img(alt='no image' src='assets/ic_behance.svg')
-        a.m-right-1(target="_blank" href="https://www.behance.net/noisestudioco")
+        a.m-right-1.social-icon(target="_blank" href="https://www.behance.net/noisestudioco")
           img(alt='no image' src='assets/ic_dribble.svg')
+      span.copyright
+        | © Copyright 2018 
 
     // inject:js
     // endinject

@@ -133,6 +133,10 @@ section {
 
 .hero {
   position: relative;
+
+  @media (max-width: 768px) {
+    padding-bottom: 120px;
+  }
 }
 
 .ah-text {
@@ -146,7 +150,7 @@ section {
     max-height: 100%;
   }
   @media(max-width: 768px) {
-    bottom: 130px;
+    bottom: -50px;
     height: 160px;
   }
 }
@@ -168,16 +172,24 @@ section {
     top: calc(50% - 40px);
 
     @media (max-width: 768px) {
-      top: calc(50% - 90px);
+      top: 50%;
     }
   }
 
   .cover-description {
     bottom: 20px;
     position: absolute;
-    right: 70px;
+    right: 120px;
     @media (max-width: 768px) {
-      display: none;
+      max-width: 80%;
+      margin: 0 auto;
+      left: 70px;
+    right: inherit;
+    bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
   @media (max-width: 768px) {
@@ -196,7 +208,7 @@ section {
       width: 120%;
 
       &:last-child {
-        bottom: -50px !important;
+        bottom: -200px !important;
         top: inherit !important;
         @media (max-width: 768px) {
           bottom: -10px !important;
@@ -232,7 +244,7 @@ section {
 }
 
 .logo-section {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   position: relative;
 
@@ -246,6 +258,7 @@ section {
   }
   @media (max-width: 768px) {
     margin: 20px auto;
+    margin-top: 70px;
   }
 }
 
@@ -253,7 +266,6 @@ section {
   align-items: flex-end;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   overflow-x: hidden;
 
   .bang-row {
@@ -292,10 +304,12 @@ section {
       text-align: right;
 
       a {
-        background-image: url('../assets/yellow_rect.svg');
-        background-position: bottom right;
-        background-repeat: no-repeat;
+        text-decoration: underline;
+        background: #FFFE60;
+        padding: 0 6px;
+        margin-left: 5px;
       }
+
       @media (max-width: 768px) {
         align-self: center;
         font-size: 14px;
@@ -315,7 +329,7 @@ section {
   }
 
   .about-section-caption {
-    left: calc(50% - 60px);
+    left: 50%;
     letter-spacing: 4px;
     line-height: 34px;
     position: absolute;
@@ -352,7 +366,6 @@ section {
 
   .we-will-like-you-row {
     align-items: flex-end;
-    margin-bottom: 75px;
     position: relative;
 
     .will-like-you {
@@ -395,7 +408,7 @@ section {
   max-width: 65%;
   @media (max-width: 768px) {
     max-width: 100%;
-    padding: 10px 40px;
+    padding: 20px 40px;
   }
 }
 
@@ -498,11 +511,23 @@ section {
 }
 
 .contact-section {
-  background-image: url('../assets/contact_bg.jpg');
+  background-image: url('../assets/contact_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -25px;
+  padding: 30px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+
+    .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
 
   .contact-section-max{
     display: flex;
@@ -539,7 +564,7 @@ section {
   }
 
   .max-width-11 {
-    max-width: 90%;
+    max-width: 80%;
     @media (max-width: 768px) {
       max-width: 100%;
     }
@@ -769,18 +794,20 @@ footer {
   }
 
   .rect-wrapper {
+    background-image: url('../assets/footer_rectangle_black.svg');
     position: relative;
+    background-position: center;
+    background-size: 100% 100%;    background-repeat: no-repeat;
+    padding: 30px;
+    padding-bottom: 80px;
+
+    @media (max-width: 768px) {
+      padding: 15px;
+      padding-bottom: 65px;
+    }
 
     .content-wrapper {
-      left: 50%;
-      padding: 10px 50px;
-      position: absolute;
-      top: calc(50% - 30px);
-      transform: translate(-50%, -50%);
-      width: 100%;
-
       @media (max-width: 768px) {
-        padding: 15px;
 
         p {
           font-size: 10px;
@@ -832,13 +859,15 @@ form textarea {
   flex-direction: column;
 
   .drop-us {
-    color: #333;
+    color: #000;
     font-family: 'Gotham Bold';
     font-size: 20px;
     letter-spacing: 2.93px;
     line-height: 30px;
-    max-width: 250px;
+    max-width: 230px;
     width: 100%;
+    padding-left: 15px;
+    font-style: italic;
   }
 
   .email-wrapper {
@@ -864,27 +893,44 @@ form textarea {
     left: calc(50% + 60px);
     letter-spacing: 4.5px;
     line-height: 26px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) !important;
+    background: #FFFE60;
+    padding: 5px;
+
     @media (max-width: 768px) {
       font-size: 18px;
-      left: 50%;
     }
   }
 }
 
 .ok-gotit {
-  background-image: url('../assets/yellow_rect.svg');
+  background-image: url(../assets/yellow_rect.svg);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 100%;
   color: #000;
   font-family: 'Gotham Medium';
-  font-size: 24px;
-  letter-spacing: 5px;
+  font-size: 30px;
+  letter-spacing: 3px;
   max-width: 500px;
   padding-left: 20px;
+  line-height: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
+
+.social-icon {
+  @media (max-width: 768px) {
+    height: 30px;
+    width: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .submit-button {

@@ -51,6 +51,14 @@ $rozha: 'Rozha One', serif;
     }
   }
 
+  &.light {
+    font-family: 'Gotham-Light';
+  }
+
+  &.bold {
+    font-family: 'Gotham-Bold';
+  }
+
   &.orange {
     color: $orange;
   }
